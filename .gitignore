@@ -6,3 +6,6 @@
 #
 # Pods/
 
+.idea
+iOSApiClient.xcworkspace/xcuserdata
+SampleApplication/SampleApplication.xcodeproj/xcuserdata
