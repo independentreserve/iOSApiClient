@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73BC63D07A668637AABF0D81 /* IRConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6C273D18B825EF6B2373 /* IRConstants.m */; };
+		73BC69A9ABF08513AD3E0FF8 /* IRMethodsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73BC6C4569FA2276DC71D00F /* IRMethodsTableViewController.m */; };
+		73BC6C4C782C0FA95641E0B5 /* NSData+IRHexadecimalString.m in Sources */ = {isa = PBXBuildFile; fileRef = 73BC631FE927BF24E113D7A9 /* NSData+IRHexadecimalString.m */; };
+		73BC6DC20A16009B0942B22F /* NSString+IRSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = 73BC691AC9EEFAB31888A1A0 /* NSString+IRSignature.m */; };
 		C54D751119A47B21002C533D /* reload_black.png in Resources */ = {isa = PBXBuildFile; fileRef = C54D751019A47B21002C533D /* reload_black.png */; };
-		C54D751419A4A098002C533D /* IRMethodsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C54D751319A4A098002C533D /* IRMethodsTableViewController.m */; };
 		C54D751719A4A32E002C533D /* IRRequestMethodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C54D751619A4A32E002C533D /* IRRequestMethodViewController.m */; };
 		C54D751A19A4B22A002C533D /* IRGetParametersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C54D751919A4B22A002C533D /* IRGetParametersViewController.m */; };
 		C5518E1119A31B4700FC57D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5518E1019A31B4700FC57D1 /* Foundation.framework */; };
@@ -26,7 +29,9 @@
 		C5518E4119A31B9500FC57D1 /* Storyboard_Phone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5518E4019A31B9500FC57D1 /* Storyboard_Phone.storyboard */; };
 		C5518E4C19A32B3500FC57D1 /* IRNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5518E4B19A32B3500FC57D1 /* IRNetworkManager.m */; };
 		C5518E4F19A32B4A00FC57D1 /* IRAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5518E4E19A32B4A00FC57D1 /* IRAPIManager.m */; };
-		C5518E5419A377E100FC57D1 /* Storyboard_Pad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5518E5319A377E100FC57D1 /* Storyboard_Pad.storyboard */; };
+		C5AC1C8F19AB498100878F8D /* IRParameterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AC1C8E19AB498100878F8D /* IRParameterTableViewCell.m */; };
+		C5AC1C9219AB4F2E00878F8D /* IRGetCurrencyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AC1C9119AB4F2E00878F8D /* IRGetCurrencyViewController.m */; };
+		C5AC1C9519AB59E800878F8D /* IRGetNumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AC1C9419AB59E800878F8D /* IRGetNumberViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,9 +45,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		73BC631FE927BF24E113D7A9 /* NSData+IRHexadecimalString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+IRHexadecimalString.m"; sourceTree = "<group>"; };
+		73BC644D58BFD799757952B3 /* IRConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRConstants.h; sourceTree = "<group>"; };
+		73BC64F0C6EFE957E5D03959 /* IRMethodsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IRMethodsTableViewController.h; path = SampleApplicationTests/IRMethodsTableViewController.h; sourceTree = SOURCE_ROOT; };
+		73BC671DE8258BAE4C69B9B6 /* NSString+IRSignature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+IRSignature.h"; sourceTree = "<group>"; };
+		73BC68A0004C60348BF64C6B /* NSData+IRHexadecimalString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+IRHexadecimalString.h"; sourceTree = "<group>"; };
+		73BC691AC9EEFAB31888A1A0 /* NSString+IRSignature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+IRSignature.m"; sourceTree = "<group>"; };
+		73BC6C273D18B825EF6B2373 /* IRConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRConstants.m; sourceTree = "<group>"; };
+		73BC6C4569FA2276DC71D00F /* IRMethodsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IRMethodsTableViewController.m; path = SampleApplicationTests/IRMethodsTableViewController.m; sourceTree = SOURCE_ROOT; };
 		C54D751019A47B21002C533D /* reload_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reload_black.png; sourceTree = "<group>"; };
-		C54D751219A4A098002C533D /* IRMethodsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IRMethodsTableViewController.h; path = ViewControllers/IRMethodsTableViewController.h; sourceTree = "<group>"; };
-		C54D751319A4A098002C533D /* IRMethodsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IRMethodsTableViewController.m; path = ViewControllers/IRMethodsTableViewController.m; sourceTree = "<group>"; };
 		C54D751519A4A32E002C533D /* IRRequestMethodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IRRequestMethodViewController.h; path = ViewControllers/IRRequestMethodViewController.h; sourceTree = "<group>"; };
 		C54D751619A4A32E002C533D /* IRRequestMethodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IRRequestMethodViewController.m; path = ViewControllers/IRRequestMethodViewController.m; sourceTree = "<group>"; };
 		C54D751819A4B22A002C533D /* IRGetParametersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IRGetParametersViewController.h; path = ViewControllers/IRGetParametersViewController.h; sourceTree = "<group>"; };
@@ -68,7 +79,13 @@
 		C5518E4B19A32B3500FC57D1 /* IRNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRNetworkManager.m; sourceTree = "<group>"; };
 		C5518E4D19A32B4A00FC57D1 /* IRAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRAPIManager.h; sourceTree = "<group>"; };
 		C5518E4E19A32B4A00FC57D1 /* IRAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRAPIManager.m; sourceTree = "<group>"; };
-		C5518E5319A377E100FC57D1 /* Storyboard_Pad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Storyboard_Pad.storyboard; path = Storyboards/Storyboard_Pad.storyboard; sourceTree = "<group>"; };
+		C5AC1C8319AB42E900878F8D /* IRCellDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IRCellDelegate.h; sourceTree = "<group>"; };
+		C5AC1C8D19AB498100878F8D /* IRParameterTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRParameterTableViewCell.h; sourceTree = "<group>"; };
+		C5AC1C8E19AB498100878F8D /* IRParameterTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRParameterTableViewCell.m; sourceTree = "<group>"; };
+		C5AC1C9019AB4F2E00878F8D /* IRGetCurrencyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IRGetCurrencyViewController.h; path = ViewControllers/IRGetCurrencyViewController.h; sourceTree = "<group>"; };
+		C5AC1C9119AB4F2E00878F8D /* IRGetCurrencyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IRGetCurrencyViewController.m; path = ViewControllers/IRGetCurrencyViewController.m; sourceTree = "<group>"; };
+		C5AC1C9319AB59E800878F8D /* IRGetNumberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IRGetNumberViewController.h; path = ViewControllers/IRGetNumberViewController.h; sourceTree = "<group>"; };
+		C5AC1C9419AB59E800878F8D /* IRGetNumberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IRGetNumberViewController.m; path = ViewControllers/IRGetNumberViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +154,7 @@
 		C5518E1619A31B4700FC57D1 /* SampleApplication */ = {
 			isa = PBXGroup;
 			children = (
+				C5AC1C7F19AB41F400878F8D /* Cells */,
 				C54D750F19A47B21002C533D /* Images */,
 				C5518E4219A3244E00FC57D1 /* View Controllers */,
 				C5518E3F19A31B7300FC57D1 /* Storyboards */,
@@ -181,7 +199,6 @@
 			isa = PBXGroup;
 			children = (
 				C5518E4019A31B9500FC57D1 /* Storyboard_Phone.storyboard */,
-				C5518E5319A377E100FC57D1 /* Storyboard_Pad.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -189,12 +206,16 @@
 		C5518E4219A3244E00FC57D1 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C54D751219A4A098002C533D /* IRMethodsTableViewController.h */,
-				C54D751319A4A098002C533D /* IRMethodsTableViewController.m */,
+				73BC64F0C6EFE957E5D03959 /* IRMethodsTableViewController.h */,
+				73BC6C4569FA2276DC71D00F /* IRMethodsTableViewController.m */,
 				C54D751519A4A32E002C533D /* IRRequestMethodViewController.h */,
 				C54D751619A4A32E002C533D /* IRRequestMethodViewController.m */,
 				C54D751819A4B22A002C533D /* IRGetParametersViewController.h */,
 				C54D751919A4B22A002C533D /* IRGetParametersViewController.m */,
+				C5AC1C9019AB4F2E00878F8D /* IRGetCurrencyViewController.h */,
+				C5AC1C9119AB4F2E00878F8D /* IRGetCurrencyViewController.m */,
+				C5AC1C9319AB59E800878F8D /* IRGetNumberViewController.h */,
+				C5AC1C9419AB59E800878F8D /* IRGetNumberViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -206,8 +227,24 @@
 				C5518E4B19A32B3500FC57D1 /* IRNetworkManager.m */,
 				C5518E4D19A32B4A00FC57D1 /* IRAPIManager.h */,
 				C5518E4E19A32B4A00FC57D1 /* IRAPIManager.m */,
+				73BC691AC9EEFAB31888A1A0 /* NSString+IRSignature.m */,
+				73BC671DE8258BAE4C69B9B6 /* NSString+IRSignature.h */,
+				73BC631FE927BF24E113D7A9 /* NSData+IRHexadecimalString.m */,
+				73BC68A0004C60348BF64C6B /* NSData+IRHexadecimalString.h */,
+				73BC6C273D18B825EF6B2373 /* IRConstants.m */,
+				73BC644D58BFD799757952B3 /* IRConstants.h */,
 			);
 			path = iOSApiClient;
+			sourceTree = "<group>";
+		};
+		C5AC1C7F19AB41F400878F8D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C5AC1C8319AB42E900878F8D /* IRCellDelegate.h */,
+				C5AC1C8D19AB498100878F8D /* IRParameterTableViewCell.h */,
+				C5AC1C8E19AB498100878F8D /* IRParameterTableViewCell.m */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +325,6 @@
 			files = (
 				C54D751119A47B21002C533D /* reload_black.png in Resources */,
 				C5518E1B19A31B4700FC57D1 /* InfoPlist.strings in Resources */,
-				C5518E5419A377E100FC57D1 /* Storyboard_Pad.storyboard in Resources */,
 				C5518E4119A31B9500FC57D1 /* Storyboard_Phone.storyboard in Resources */,
 				C5518E2319A31B4700FC57D1 /* Images.xcassets in Resources */,
 			);
@@ -313,9 +349,15 @@
 				C5518E2119A31B4700FC57D1 /* IRAppDelegate.m in Sources */,
 				C5518E4F19A32B4A00FC57D1 /* IRAPIManager.m in Sources */,
 				C5518E4C19A32B3500FC57D1 /* IRNetworkManager.m in Sources */,
+				C5AC1C9519AB59E800878F8D /* IRGetNumberViewController.m in Sources */,
 				C54D751A19A4B22A002C533D /* IRGetParametersViewController.m in Sources */,
 				C54D751719A4A32E002C533D /* IRRequestMethodViewController.m in Sources */,
-				C54D751419A4A098002C533D /* IRMethodsTableViewController.m in Sources */,
+				C5AC1C8F19AB498100878F8D /* IRParameterTableViewCell.m in Sources */,
+				73BC6DC20A16009B0942B22F /* NSString+IRSignature.m in Sources */,
+				73BC6C4C782C0FA95641E0B5 /* NSData+IRHexadecimalString.m in Sources */,
+				73BC69A9ABF08513AD3E0FF8 /* IRMethodsTableViewController.m in Sources */,
+				C5AC1C9219AB4F2E00878F8D /* IRGetCurrencyViewController.m in Sources */,
+				73BC63D07A668637AABF0D81 /* IRConstants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

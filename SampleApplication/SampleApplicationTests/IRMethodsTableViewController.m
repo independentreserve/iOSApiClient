@@ -34,11 +34,12 @@
     }, @{
         @"type" : @"Private",
         @"methods" : @[
-            @{@"name" : @"PlaceLimitOrder", @"parameters" : @[]},
-            @{@"name" : @"PlaceMarketOrder", @"parameters" : @[]},
+            @{@"name" : @"PlaceLimitOrder", @"parameters" : @[@"primaryCurrencyCode", @"secondaryCurrencyCode", @"orderType", @"price", @"volume"]},
+            @{@"name" : @"PlaceMarketOrder", @"parameters" : @[@"primaryCurrencyCode", @"secondaryCurrencyCode", @"orderType", @"price", @"volume"]},
             @{@"name" : @"CancelOrder", @"parameters" : @[]},
-            @{@"name" : @"GetOpenOrders", @"parameters" : @[]},
-            @{@"name" : @"GetClosedOrders", @"parameters" : @[]},
+            @{@"name" : @"GetOpenOrders", @"parameters" : @[@"primaryCurrencyCode", @"secondaryCurrencyCode", @"pageIndex", @"pageSize"]},
+            @{@"name" : @"GetClosedOrders", @"parameters" : @[@"primaryCurrencyCode", @"secondaryCurrencyCode", @"pageIndex", @"pageSize"]},
+            @{@"name" : @"GetAccounts", @"parameters" : @[]},
             @{@"name" : @"GetTransactions", @"parameters" : @[]},
             @{@"name" : @"GetBitcoinDepositAddress", @"parameters" : @[]}
         ]
@@ -84,13 +85,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MethodCell" forIndexPath:indexPath];
     NSArray *methods = self.types[indexPath.section][@"methods"];
     NSDictionary *method = methods[indexPath.row];
-    NSArray *methodParameters = method[@"parameters"];
     cell.textLabel.text = method[@"name"];
-    if (methodParameters.count > 0) {
-        cell.detailTextLabel.text = [NSString stringWithFormat:@"Required parameters: %@", @(methodParameters.count)];
-    } else {
-        cell.detailTextLabel.text = @"This method does not take any parameters";
-    }
     return cell;
 }
 

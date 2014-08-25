@@ -64,17 +64,26 @@
     }
 
     NSString *parametersString = [self serializeParameters:parameters];
-    NSString *urlString = [NSString stringWithFormat:@"%@/%@%@", IRNetworkManager_PublicAPIEndpoint, method,
-                                                     parametersString];
+    NSString *urlString = [NSString stringWithFormat:@"%@/%@%@",
+                           IRNetworkManager_PublicAPIEndpoint, method, parametersString];
+    
     NSURL *url = [NSURL URLWithString:urlString];
+
+    NSLog(@"GET: %@", urlString);
+
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [NSURLConnection sendAsynchronousRequest:request queue:self.queue
                            completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
-                               if (handler != nil) {
-                                   NSError *jsonError = nil;
-                                   id json = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
-                                   handler(connectionError == nil && jsonError == nil, json);
-                               }
+                                   if (connectionError != nil) {
+                                        handler(NO, nil);
+                                   } else {
+                                       NSError *jsonError = nil;
+                                       id json = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
+
+                                       NSLog(@"JSON: %@", json);
+
+                                       handler(connectionError == nil && jsonError == nil, json);
+                                   }
                            }];
 }
 
@@ -83,7 +92,13 @@
         return;
     }
 
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:IRNetworkManager_PrivateAPIEndpoint]];
+    NSString *urlString = [NSString stringWithFormat:@"%@/%@", IRNetworkManager_PrivateAPIEndpoint, method];
+    NSURL *url = [NSURL URLWithString:urlString];
+
+    NSLog(@"POST: %@", urlString);
+    NSLog(@"PARAMETERS: %@", parameters);
+
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     [request setHTTPMethod:@"POST"];
     [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
     NSError *jsonSerializationError = nil;
@@ -92,7 +107,16 @@
     [NSURLConnection sendAsynchronousRequest:request
                                        queue:self.queue
                            completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+                               if (connectionError != nil) {
+                                   handler(NO, nil);
+                               } else {
+                                   NSError *jsonError = nil;
+                                   id json = [NSJSONSerialization JSONObjectWithData:data options:0 error:&jsonError];
 
+                                   NSLog(@"JSON: %@", json);
+
+                                   handler(connectionError == nil && jsonError == nil, json);
+                               }
                            }];
 }
 

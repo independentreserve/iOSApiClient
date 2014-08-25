@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface IRGetParametersViewController : UIViewController
+@interface IRGetParametersViewController : UITableViewController
 
 @property (nonatomic, copy) NSString *method;
 @property (nonatomic, strong) NSArray *requiredParameters;
+@property (nonatomic, strong) NSMutableDictionary *parameters;
 
 @end
