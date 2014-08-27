@@ -8,21 +8,66 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void (^IRAPIManagerResponseHandler)(BOOL success, id content);
+@protocol IRNetworkManagement;
+
+typedef void (^IRAPIManagerResponseHandler)(id content, NSError *error);
 
 /*!
     @class IRAPIManager
 
-    @description
-
+    @abstract
         Independent Reserve API management class.
-
-
-
 */
 @interface IRAPIManager : NSObject
 
+/*!
+    @method manager
+
+    @abstract
+        Retrieves default IRAPIManager instance.
+ */
 + (instancetype)manager;
+
+/*!
+    @property networkManager
+
+    @abstract
+        Network management object which performs network requests.
+
+*/
+@property (nonatomic, strong) id <IRNetworkManagement> networkManager;
+
+/*!
+    @property publicAPIRoot
+ 
+    @abstract 
+        Independent Reserve API root for public methods. If property set to nil returns IRAPI_RootPublic value from IRConstants.
+*/
+@property (nonatomic, strong) NSString *publicAPIRoot;
+
+/*!
+    @property privateAPIRoot
+ 
+    @abstract
+        Independent Reserve API root for private methods. If property set to nil returns IRAPI_RootPrivate value from IRConstants.
+ */
+@property (nonatomic, strong) NSString *privateAPIRoot;
+
+/*!
+    @property apiKey
+
+    @abstract
+        API key used to perform requests to private methods. If property set to nil returns 'IndependentReserveAPIKey' value from info.plist.
+*/
+@property (nonatomic, strong) NSString *apiKey;
+
+/*!
+    @property apiSecret
+
+    @abstract
+        API secret used to perform requests to private methods. If property set to nil returns 'IndependentReserveAPISecret' value from info.plist.
+*/
+@property (nonatomic, strong) NSString *apiSecret;
 
 /*!
     @method getValidPrimaryCurrencyCodesResponseHandler:
@@ -81,11 +126,11 @@ typedef void (^IRAPIManagerResponseHandler)(BOOL success, id content);
 
     @param
         primaryCurrencyCode
-            Primary currency code. Must be a valid primary currency which can be checked via the getValidPrimaryCurrencyCodesResponseHandler: method.
+            Primary currency code. Must be a valid primary currency which can be checked via the getValidPrimaryCurrencyCodesResponseHandler: methodName.
     
     @param
         secondaryCurrencyCode
-            Secondary currency code. Must be a valid secondary currency which can be checked via the getValidSecondaryCurrencyCodesResponseHandler: method.
+            Secondary currency code. Must be a valid secondary currency which can be checked via the getValidSecondaryCurrencyCodesResponseHandler: methodName.
     
     @param
         responseHandler
@@ -104,11 +149,11 @@ typedef void (^IRAPIManagerResponseHandler)(BOOL success, id content);
 
     @param
         primaryCurrencyCode
-            Primary currency code. Must be a valid primary currency which can be checked via the getValidPrimaryCurrencyCodesResponseHandler: method.
+            Primary currency code. Must be a valid primary currency which can be checked via the getValidPrimaryCurrencyCodesResponseHandler: methodName.
 
     @param
         secondaryCurrencyCode
-            Secondary currency code. Must be a valid secondary currency which can be checked via the getValidSecondaryCurrencyCodesResponseHandler: method.
+            Secondary currency code. Must be a valid secondary currency which can be checked via the getValidSecondaryCurrencyCodesResponseHandler: methodName.
 
     @param
         responseHandler
@@ -127,11 +172,11 @@ typedef void (^IRAPIManagerResponseHandler)(BOOL success, id content);
 
     @param
         primaryCurrencyCode
-            Primary currency code. Must be a valid primary currency which can be checked via the getValidPrimaryCurrencyCodesResponseHandler: method.
+            Primary currency code. Must be a valid primary currency which can be checked via the getValidPrimaryCurrencyCodesResponseHandler: methodName.
 
     @param
         secondaryCurrencyCode
-            Secondary currency code. Must be a valid secondary currency which can be checked via the getValidSecondaryCurrencyCodesResponseHandler: method.
+            Secondary currency code. Must be a valid secondary currency which can be checked via the getValidSecondaryCurrencyCodesResponseHandler: methodName.
 
     @param
         numberOfHoursInThePastToRetrieve
@@ -155,11 +200,11 @@ typedef void (^IRAPIManagerResponseHandler)(BOOL success, id content);
 
     @param
         primaryCurrencyCode
-            Primary currency code. Must be a valid primary currency which can be checked via the getValidPrimaryCurrencyCodesResponseHandler: method.
+            Primary currency code. Must be a valid primary currency which can be checked via the getValidPrimaryCurrencyCodesResponseHandler: methodName.
 
     @param
         secondaryCurrencyCode
-            Secondary currency code. Must be a valid secondary currency which can be checked via the getValidSecondaryCurrencyCodesResponseHandler: method.
+            Secondary currency code. Must be a valid secondary currency which can be checked via the getValidSecondaryCurrencyCodesResponseHandler: methodName.
 
     @param
         numberOfRecentTradesToRetrieve
@@ -183,15 +228,15 @@ typedef void (^IRAPIManagerResponseHandler)(BOOL success, id content);
 
     @param
         primaryCurrencyCode
-            Primary currency code. Must be a valid primary currency which can be checked via the getValidPrimaryCurrencyCodesResponseHandler: method.
+            Primary currency code. Must be a valid primary currency which can be checked via the getValidPrimaryCurrencyCodesResponseHandler: methodName.
 
     @param
         secondaryCurrencyCode
-            Secondary currency code. Must be a valid secondary currency which can be checked via the getValidSecondaryCurrencyCodesResponseHandler: method.
+            Secondary currency code. Must be a valid secondary currency which can be checked via the getValidSecondaryCurrencyCodesResponseHandler: methodName.
 
     @param
         orderType
-            The type of limit order. Must be a valid limit order type, which can be checked via the getValidLimitOrderTypesResponseHandler: method.
+            The type of limit order. Must be a valid limit order type, which can be checked via the getValidLimitOrderTypesResponseHandler: methodName.
 
     @param
         price
@@ -214,26 +259,22 @@ typedef void (^IRAPIManagerResponseHandler)(BOOL success, id content);
 
 /*!
     @method
-        placeMarketOrderWithPrimaryCurrencyCode:secondaryCurrencyCode:orderType:price:volume:responseHandler:
+        placeMarketOrderWithPrimaryCurrencyCode:secondaryCurrencyCode:orderType:volume:responseHandler:
 
     @abstract
         Places new market bid / offer order. A Market Bid is a buy order and a Market Offer is a sell order.
 
     @param
         primaryCurrencyCode
-            Primary currency code. Must be a valid primary currency which can be checked via the getValidPrimaryCurrencyCodesResponseHandler: method.
+            Primary currency code. Must be a valid primary currency which can be checked via the getValidPrimaryCurrencyCodesResponseHandler: methodName.
 
     @param
         secondaryCurrencyCode
-            Secondary currency code. Must be a valid secondary currency which can be checked via the getValidSecondaryCurrencyCodesResponseHandler: method.
+            Secondary currency code. Must be a valid secondary currency which can be checked via the getValidSecondaryCurrencyCodesResponseHandler: methodName.
 
     @param
         orderType
-            The type of market order. Must be a valid market order type, which can be checked via the getValidMarketOrderTypesResponseHandler: method.
-
-    @param
-        price
-            The price in secondary currency to buy/sell.
+            The type of market order. Must be a valid market order type, which can be checked via the getValidMarketOrderTypesResponseHandler: methodName.
 
     @param
         volume
@@ -244,9 +285,7 @@ typedef void (^IRAPIManagerResponseHandler)(BOOL success, id content);
             A block which receives the results of the API call.
 */
 - (void)placeMarketOrderWithPrimaryCurrencyCode:(NSString *)primaryCurrencyCode
-                          secondaryCurrencyCode:(NSString *)secondaryCurrencyCode
-                                      orderType:(NSString *)orderType
-                                          price:(NSNumber *)price
+                          secondaryCurrencyCode:(NSString *)secondaryCurrencyCode orderType:(NSString *)orderType
                                          volume:(NSNumber *)volume
                                 responseHandler:(IRAPIManagerResponseHandler)responseHandler;
 
@@ -277,11 +316,11 @@ typedef void (^IRAPIManagerResponseHandler)(BOOL success, id content);
 
     @param
         primaryCurrencyCode
-            Primary currency code. Must be a valid primary currency which can be checked via the getValidPrimaryCurrencyCodesResponseHandler: method.
+            Primary currency code. Must be a valid primary currency which can be checked via the getValidPrimaryCurrencyCodesResponseHandler: methodName.
 
     @param
         secondaryCurrencyCode
-            Secondary currency code. Must be a valid secondary currency which can be checked via the getValidSecondaryCurrencyCodesResponseHandler: method.
+            Secondary currency code. Must be a valid secondary currency which can be checked via the getValidSecondaryCurrencyCodesResponseHandler: methodName.
 
     @param
         pageIndex
@@ -310,11 +349,11 @@ typedef void (^IRAPIManagerResponseHandler)(BOOL success, id content);
 
     @param
         primaryCurrencyCode
-            Primary currency code. Must be a valid primary currency which can be checked via the getValidPrimaryCurrencyCodesResponseHandler: method.
+            Primary currency code. Must be a valid primary currency which can be checked via the getValidPrimaryCurrencyCodesResponseHandler: methodName.
 
     @param
         secondaryCurrencyCode
-            Secondary currency code. Must be a valid secondary currency which can be checked via the getValidSecondaryCurrencyCodesResponseHandler: method.
+            Secondary currency code. Must be a valid secondary currency which can be checked via the getValidSecondaryCurrencyCodesResponseHandler: methodName.
 
     @param
         pageIndex
@@ -356,15 +395,15 @@ typedef void (^IRAPIManagerResponseHandler)(BOOL success, id content);
 
     @param
         accountGUID
-            The GUID of your Independent Reseve account. You can retrieve information about your accounts via the getAccountsWithResponseHandler: method
+            The GUID of your Independent Reserve account. You can retrieve information about your accounts via the getAccountsWithResponseHandler: methodName
 
     @param
         fromDate
-            The date from which you want to retrieve transactions.
+            Optional. The date from which you want to retrieve transactions.
 
     @param
         toDate
-            The date until which you want to retrieve transactions.
+            Optional. The date until which you want to retrieve transactions.
 
     @param
         pageIndex

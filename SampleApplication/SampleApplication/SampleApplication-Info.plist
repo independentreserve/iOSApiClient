@@ -22,16 +22,12 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
-	<key>IndependentReserveAPIKey</key>
-	<string>60109b31-9bcb-4a4b-a5ed-a8002d3097db</string>
-	<key>IndependentReserveAPISecret</key>
-	<string>06e2e9606ea348dd9e635cb273868280</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UIMainStoryboardFile</key>
 	<string>Storyboard_Phone</string>
 	<key>UIMainStoryboardFile~ipad</key>
-	<string>Storyboard_Pad</string>
+	<string>Storyboard_Phone</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
@@ -43,9 +39,6 @@
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationPortraitUpsideDown</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 </dict>
 </plist>

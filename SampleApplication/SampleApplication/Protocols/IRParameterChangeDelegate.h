@@ -1,5 +1,5 @@
 //
-//  IRCellDelegate.h
+//  IRParameterChangeDelegate.h
 //  SampleApplication
 //
 //  Created by Maxim Pervushin on 25/08/14.
@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol IRCellDelegate <NSObject>
+@protocol IRParameterChangeDelegate <NSObject>
 
-- (void)cellValueWithKey:(NSString *)key changed:(id)newValue;
+- (void)parameter:(NSString *)parameter valueChanged:(id)newValue;
 
 @end

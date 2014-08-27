@@ -1,31 +1,31 @@
 //
-//  IRGetNumberViewController.m
+//  IRGetStringViewController.m
 //  SampleApplication
 //
-//  Created by Maxim Pervushin on 25/08/14.
+//  Created by Maxim Pervushin on 26/08/14.
 //  Copyright (c) 2014 Independent Reserve Pty. Ltd. All rights reserved.
 //
 
-#import "IRGetNumberViewController.h"
+#import "IRGetStringViewController.h"
 
-@interface IRGetNumberViewController ()
+@interface IRGetStringViewController ()
 
 @property (nonatomic, weak) IBOutlet UITextField *textField;
 
 @end
 
-@implementation IRGetNumberViewController
+@implementation IRGetStringViewController
 
 #pragma mark - Methods
 #pragma mark Methods (Overloaded)
 
 - (id)currentParameterValue {
-    return @(self.textField.text.floatValue);
+    return self.textField.text;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    self.textField.text = [(NSNumber *) self.initialParameterValue stringValue];
+    self.textField.text = self.initialParameterValue;
 }
 
 @end

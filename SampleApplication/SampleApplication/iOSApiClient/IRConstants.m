@@ -5,6 +5,9 @@
 
 #import "IRConstants.h"
 
+NSString *const IRAPI_RootPublic = @"https://api.independentreserve.com/Public";
+NSString *const IRAPI_RootPrivate = @"https://api.independentreserve.com/Private";
+
 NSString *const IRAPI_GetValidPrimaryCurrencyCodesMethod = @"GetValidPrimaryCurrencyCodes";
 NSString *const IRAPI_GetValidSecondaryCurrencyCodesMethod = @"GetValidSecondaryCurrencyCodes";
 NSString *const IRAPI_GetValidLimitOrderTypesMethod = @"GetValidLimitOrderTypes";

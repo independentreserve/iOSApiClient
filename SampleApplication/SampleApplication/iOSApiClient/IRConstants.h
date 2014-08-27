@@ -7,6 +7,10 @@
 // Independent Reserve API related constants
 //
 
+// Default API root
+extern NSString *const IRAPI_RootPublic;
+extern NSString *const IRAPI_RootPrivate;
+
 // Public methods names
 extern NSString *const IRAPI_GetValidPrimaryCurrencyCodesMethod;
 extern NSString *const IRAPI_GetValidSecondaryCurrencyCodesMethod;

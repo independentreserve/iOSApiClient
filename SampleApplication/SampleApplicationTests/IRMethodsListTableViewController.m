@@ -1,47 +1,48 @@
 //
-//  IRMethodsTableViewController.m
+//  IRMethodsListTableViewController.m
 //  SampleApplication
 //
 //  Created by Maxim Pervushin on 20/08/14.
 //  Copyright (c) 2014 Independent Reserve Pty. Ltd. All rights reserved.
 //
 
-#import "IRMethodsTableViewController.h"
+#import "IRMethodsListTableViewController.h"
 #import "IRRequestMethodViewController.h"
 #import "IRGetParametersViewController.h"
+#import "IRConstants.h"
 
-@interface IRMethodsTableViewController ()
+@interface IRMethodsListTableViewController ()
 
 @property (nonatomic, strong) NSArray *types;
 
 @end
 
-@implementation IRMethodsTableViewController
+@implementation IRMethodsListTableViewController
 
 - (void)viewWillAppear:(BOOL)animated {
     self.types = @[@{
         @"type" : @"Public",
         @"methods" : @[
-            @{@"name" : @"GetValidPrimaryCurrencyCodes", @"parameters" : @[]},
-            @{@"name" : @"GetValidSecondaryCurrencyCodes", @"parameters" : @[]},
-            @{@"name" : @"GetValidLimitOrderTypes", @"parameters" : @[]},
-            @{@"name" : @"GetValidMarketOrderTypes", @"parameters" : @[]},
-            @{@"name" : @"GetMarketSummary", @"parameters" : @[@"primaryCurrencyCode", @"secondaryCurrencyCode"]},
-            @{@"name" : @"GetOrderBook", @"parameters" : @[@"primaryCurrencyCode", @"secondaryCurrencyCode"]},
-            @{@"name" : @"GetTradeHistorySummary", @"parameters" : @[@"primaryCurrencyCode", @"secondaryCurrencyCode", @"numberOfHoursInThePastToRetrieve"]},
-            @{@"name" : @"GetRecentTrades", @"parameters" : @[@"primaryCurrencyCode", @"secondaryCurrencyCode", @"numberOfRecentTradesToRetrieve"]}
+            @{@"name" : IRAPI_GetValidPrimaryCurrencyCodesMethod, @"parameters" : @[]},
+            @{@"name" : IRAPI_GetValidSecondaryCurrencyCodesMethod, @"parameters" : @[]},
+            @{@"name" : IRAPI_GetValidLimitOrderTypesMethod, @"parameters" : @[]},
+            @{@"name" : IRAPI_GetValidMarketOrderTypesMethod, @"parameters" : @[]},
+            @{@"name" : IRAPI_GetMarketSummaryMethod, @"parameters" : @[IRAPI_PrimaryCurrencyCodeParameter, IRAPI_SecondaryCurrencyCodeParameter]},
+            @{@"name" : IRAPI_GetOrderBookMethod, @"parameters" : @[IRAPI_PrimaryCurrencyCodeParameter, IRAPI_SecondaryCurrencyCodeParameter]},
+            @{@"name" : IRAPI_GetTradeHistorySummaryMethod, @"parameters" : @[IRAPI_PrimaryCurrencyCodeParameter, IRAPI_SecondaryCurrencyCodeParameter, IRAPI_NumberOfHoursInThePastToRetrieveParameter]},
+            @{@"name" : IRAPI_GetRecentTradesMethod, @"parameters" : @[IRAPI_PrimaryCurrencyCodeParameter, IRAPI_SecondaryCurrencyCodeParameter,IRAPI_NumberOfRecentTradesToRetrieveParameter]}
         ]
     }, @{
         @"type" : @"Private",
         @"methods" : @[
-            @{@"name" : @"PlaceLimitOrder", @"parameters" : @[@"primaryCurrencyCode", @"secondaryCurrencyCode", @"orderType", @"price", @"volume"]},
-            @{@"name" : @"PlaceMarketOrder", @"parameters" : @[@"primaryCurrencyCode", @"secondaryCurrencyCode", @"orderType", @"price", @"volume"]},
-            @{@"name" : @"CancelOrder", @"parameters" : @[]},
-            @{@"name" : @"GetOpenOrders", @"parameters" : @[@"primaryCurrencyCode", @"secondaryCurrencyCode", @"pageIndex", @"pageSize"]},
-            @{@"name" : @"GetClosedOrders", @"parameters" : @[@"primaryCurrencyCode", @"secondaryCurrencyCode", @"pageIndex", @"pageSize"]},
-            @{@"name" : @"GetAccounts", @"parameters" : @[]},
-            @{@"name" : @"GetTransactions", @"parameters" : @[]},
-            @{@"name" : @"GetBitcoinDepositAddress", @"parameters" : @[]}
+            @{@"name" : IRAPI_PlaceLimitOrderMethod, @"parameters" : @[IRAPI_PrimaryCurrencyCodeParameter, IRAPI_SecondaryCurrencyCodeParameter, IRAPI_OrderTypeParameter, IRAPI_PriceParameter, IRAPI_VolumeParameter]},
+            @{@"name" : IRAPI_PlaceMarketOrderMethod, @"parameters" : @[IRAPI_PrimaryCurrencyCodeParameter, IRAPI_SecondaryCurrencyCodeParameter, IRAPI_OrderTypeParameter, IRAPI_VolumeParameter]},
+            @{@"name" : IRAPI_CancelOrderMethod, @"parameters" : @[IRAPI_OrderGUIDParameter]},
+            @{@"name" : IRAPI_GetOpenOrdersMethod, @"parameters" : @[IRAPI_PrimaryCurrencyCodeParameter, IRAPI_SecondaryCurrencyCodeParameter, IRAPI_PageIndexParameter, IRAPI_PageSizeParameter]},
+            @{@"name" : IRAPI_GetClosedOrdersMethod, @"parameters" : @[IRAPI_PrimaryCurrencyCodeParameter, IRAPI_SecondaryCurrencyCodeParameter, IRAPI_PageIndexParameter, IRAPI_PageSizeParameter]},
+            @{@"name" : IRAPI_GetAccountsMethod, @"parameters" : @[]},
+            @{@"name" : IRAPI_GetTransactionsMethod, @"parameters" : @[IRAPI_FromTimestampUTCParameter, IRAPI_ToTimestampUTCParameter, IRAPI_AccountGUIDParameter, IRAPI_PageIndexParameter, IRAPI_PageSizeParameter]},
+            @{@"name" : IRAPI_GetBitcoinDepositAddressMethod, @"parameters" : @[]}
         ]
     }];
 
@@ -63,7 +64,7 @@
             NSIndexPath *selectedIndexPath = [self.tableView.indexPathsForSelectedRows firstObject];
             NSArray *methods = self.types[selectedIndexPath.section][@"methods"];
             NSDictionary *method = methods[selectedIndexPath.row];
-            getParametersViewController.method = method[@"name"];
+            getParametersViewController.methodName = method[@"name"];
             getParametersViewController.requiredParameters = method[@"parameters"];
         }
     }

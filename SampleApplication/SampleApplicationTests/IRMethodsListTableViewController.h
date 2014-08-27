@@ -1,5 +1,5 @@
 //
-//  IRMethodsTableViewController.h
+//  IRMethodsListTableViewController.h
 //  SampleApplication
 //
 //  Created by Maxim Pervushin on 20/08/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface IRMethodsTableViewController : UITableViewController
+@interface IRMethodsListTableViewController : UITableViewController
 
 @end
