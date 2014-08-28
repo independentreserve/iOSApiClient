@@ -8,100 +8,113 @@
 
 #import "IRMethodsListTableViewController.h"
 #import "IRRequestMethodViewController.h"
-#import "IRGetParametersViewController.h"
+#import "IRGetParametersTableViewController.h"
 #import "IRConstants.h"
 
 @interface IRMethodsListTableViewController ()
 
-@property (nonatomic, strong) NSArray *types;
+@property (nonatomic, readonly) NSArray *methodsByType;
 
 @end
 
 @implementation IRMethodsListTableViewController
+@synthesize methodsByType = methodsByType_;
 
-- (void)viewWillAppear:(BOOL)animated {
-    self.types = @[@{
-        @"type" : @"Public",
-        @"methods" : @[
-            @{@"name" : IRAPI_GetValidPrimaryCurrencyCodesMethod, @"parameters" : @[]},
-            @{@"name" : IRAPI_GetValidSecondaryCurrencyCodesMethod, @"parameters" : @[]},
-            @{@"name" : IRAPI_GetValidLimitOrderTypesMethod, @"parameters" : @[]},
-            @{@"name" : IRAPI_GetValidMarketOrderTypesMethod, @"parameters" : @[]},
-            @{@"name" : IRAPI_GetMarketSummaryMethod, @"parameters" : @[IRAPI_PrimaryCurrencyCodeParameter, IRAPI_SecondaryCurrencyCodeParameter]},
-            @{@"name" : IRAPI_GetOrderBookMethod, @"parameters" : @[IRAPI_PrimaryCurrencyCodeParameter, IRAPI_SecondaryCurrencyCodeParameter]},
-            @{@"name" : IRAPI_GetTradeHistorySummaryMethod, @"parameters" : @[IRAPI_PrimaryCurrencyCodeParameter, IRAPI_SecondaryCurrencyCodeParameter, IRAPI_NumberOfHoursInThePastToRetrieveParameter]},
-            @{@"name" : IRAPI_GetRecentTradesMethod, @"parameters" : @[IRAPI_PrimaryCurrencyCodeParameter, IRAPI_SecondaryCurrencyCodeParameter,IRAPI_NumberOfRecentTradesToRetrieveParameter]}
-        ]
-    }, @{
-        @"type" : @"Private",
-        @"methods" : @[
-            @{@"name" : IRAPI_PlaceLimitOrderMethod, @"parameters" : @[IRAPI_PrimaryCurrencyCodeParameter, IRAPI_SecondaryCurrencyCodeParameter, IRAPI_OrderTypeParameter, IRAPI_PriceParameter, IRAPI_VolumeParameter]},
-            @{@"name" : IRAPI_PlaceMarketOrderMethod, @"parameters" : @[IRAPI_PrimaryCurrencyCodeParameter, IRAPI_SecondaryCurrencyCodeParameter, IRAPI_OrderTypeParameter, IRAPI_VolumeParameter]},
-            @{@"name" : IRAPI_CancelOrderMethod, @"parameters" : @[IRAPI_OrderGUIDParameter]},
-            @{@"name" : IRAPI_GetOpenOrdersMethod, @"parameters" : @[IRAPI_PrimaryCurrencyCodeParameter, IRAPI_SecondaryCurrencyCodeParameter, IRAPI_PageIndexParameter, IRAPI_PageSizeParameter]},
-            @{@"name" : IRAPI_GetClosedOrdersMethod, @"parameters" : @[IRAPI_PrimaryCurrencyCodeParameter, IRAPI_SecondaryCurrencyCodeParameter, IRAPI_PageIndexParameter, IRAPI_PageSizeParameter]},
-            @{@"name" : IRAPI_GetAccountsMethod, @"parameters" : @[]},
-            @{@"name" : IRAPI_GetTransactionsMethod, @"parameters" : @[IRAPI_FromTimestampUTCParameter, IRAPI_ToTimestampUTCParameter, IRAPI_AccountGUIDParameter, IRAPI_PageIndexParameter, IRAPI_PageSizeParameter]},
-            @{@"name" : IRAPI_GetBitcoinDepositAddressMethod, @"parameters" : @[]}
-        ]
-    }];
+#pragma mark - Methods
+#pragma mark Methods (Private)
 
-    [super viewWillAppear:animated];
+- (NSArray *)methodsByType {
+    if (methodsByType_ == nil) {
+        methodsByType_ = @[
+            @{
+                @"type" : @"Public",
+                @"methods" : @[
+                @{@"name" : IRAPI_GetValidPrimaryCurrencyCodesMethod, @"parameters" : @[]},
+                @{@"name" : IRAPI_GetValidSecondaryCurrencyCodesMethod, @"parameters" : @[]},
+                @{@"name" : IRAPI_GetValidLimitOrderTypesMethod, @"parameters" : @[]},
+                @{@"name" : IRAPI_GetValidMarketOrderTypesMethod, @"parameters" : @[]},
+                @{@"name" : IRAPI_GetMarketSummaryMethod, @"parameters" : @[IRAPI_PrimaryCurrencyCodeParameter, IRAPI_SecondaryCurrencyCodeParameter]},
+                @{@"name" : IRAPI_GetOrderBookMethod, @"parameters" : @[IRAPI_PrimaryCurrencyCodeParameter, IRAPI_SecondaryCurrencyCodeParameter]},
+                @{@"name" : IRAPI_GetTradeHistorySummaryMethod, @"parameters" : @[IRAPI_PrimaryCurrencyCodeParameter, IRAPI_SecondaryCurrencyCodeParameter, IRAPI_NumberOfHoursInThePastToRetrieveParameter]},
+                @{@"name" : IRAPI_GetRecentTradesMethod, @"parameters" : @[IRAPI_PrimaryCurrencyCodeParameter, IRAPI_SecondaryCurrencyCodeParameter, IRAPI_NumberOfRecentTradesToRetrieveParameter]}
+            ]
+            }, @{
+                @"type" : @"Private",
+                @"methods" : @[
+                    @{@"name" : IRAPI_PlaceLimitOrderMethod, @"parameters" : @[IRAPI_PrimaryCurrencyCodeParameter, IRAPI_SecondaryCurrencyCodeParameter, IRAPI_OrderTypeParameter, IRAPI_PriceParameter, IRAPI_VolumeParameter]},
+                    @{@"name" : IRAPI_PlaceMarketOrderMethod, @"parameters" : @[IRAPI_PrimaryCurrencyCodeParameter, IRAPI_SecondaryCurrencyCodeParameter, IRAPI_OrderTypeParameter, IRAPI_VolumeParameter]},
+                    @{@"name" : IRAPI_CancelOrderMethod, @"parameters" : @[IRAPI_OrderGUIDParameter]},
+                    @{@"name" : IRAPI_GetOpenOrdersMethod, @"parameters" : @[IRAPI_PrimaryCurrencyCodeParameter, IRAPI_SecondaryCurrencyCodeParameter, IRAPI_PageIndexParameter, IRAPI_PageSizeParameter]},
+                    @{@"name" : IRAPI_GetClosedOrdersMethod, @"parameters" : @[IRAPI_PrimaryCurrencyCodeParameter, IRAPI_SecondaryCurrencyCodeParameter, IRAPI_PageIndexParameter, IRAPI_PageSizeParameter]},
+                    @{@"name" : IRAPI_GetAccountsMethod, @"parameters" : @[]},
+                    @{@"name" : IRAPI_GetTransactionsMethod, @"parameters" : @[IRAPI_FromTimestampUTCParameter, IRAPI_ToTimestampUTCParameter, IRAPI_AccountGUIDParameter, IRAPI_PageIndexParameter, IRAPI_PageSizeParameter]},
+                    @{@"name" : IRAPI_GetBitcoinDepositAddressMethod, @"parameters" : @[]}
+                ]
+            }];
+    }
+
+    return methodsByType_;
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if (self.tableView.indexPathsForSelectedRows.count > 0) {
-        if ([segue.identifier isEqualToString:@"RequestMethod"] && [segue.destinationViewController isKindOfClass:IRRequestMethodViewController.class]) {
-            IRRequestMethodViewController *requestMethodViewController = segue.destinationViewController;
-            NSIndexPath *selectedIndexPath = [self.tableView.indexPathsForSelectedRows firstObject];
-            NSArray *methods = self.types[selectedIndexPath.section][@"methods"];
-            NSDictionary *method = methods[selectedIndexPath.row];
-            requestMethodViewController.methodName = method[@"name"];
-            requestMethodViewController.methodParameters = nil;
+#pragma mark Methods (Overloaded)
 
-        } else if ([segue.identifier isEqualToString:@"GetParameters"] && [segue.destinationViewController isKindOfClass:IRGetParametersViewController.class]) {
-            IRGetParametersViewController *getParametersViewController = segue.destinationViewController;
-            NSIndexPath *selectedIndexPath = [self.tableView.indexPathsForSelectedRows firstObject];
-            NSArray *methods = self.types[selectedIndexPath.section][@"methods"];
-            NSDictionary *method = methods[selectedIndexPath.row];
-            getParametersViewController.methodName = method[@"name"];
-            getParametersViewController.requiredParameters = method[@"parameters"];
-        }
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSIndexPath *selectedIndexPath = [self.tableView.indexPathsForSelectedRows firstObject];
+    if (selectedIndexPath == nil) {
+        // Nothing to do if no one row selected in table;
+        return;
+    }
+
+    if ([segue.destinationViewController isKindOfClass:IRRequestMethodViewController.class]) {
+        // Configure view controller for method request.
+        IRRequestMethodViewController *requestMethodViewController = segue.destinationViewController;
+        NSArray *methods = self.methodsByType[selectedIndexPath.section][@"methods"];
+        NSDictionary *method = methods[selectedIndexPath.row];
+        requestMethodViewController.methodName = method[@"name"];
+        requestMethodViewController.methodParameters = nil;
+
+    } else if ([segue.destinationViewController isKindOfClass:IRGetParametersTableViewController.class]) {
+        // Configure view controller for changing parameters.
+        IRGetParametersTableViewController *getParametersViewController = segue.destinationViewController;
+        NSArray *methods = self.methodsByType[selectedIndexPath.section][@"methods"];
+        NSDictionary *method = methods[selectedIndexPath.row];
+        getParametersViewController.methodName = method[@"name"];
+        getParametersViewController.requiredParameters = method[@"parameters"];
     }
 }
 
 #pragma mark - Protocols
-#pragma mark UITableViewDataSource
+#pragma mark Protocols (UITableViewDataSource)
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return self.types.count;
+    return self.methodsByType.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    NSArray *methods = self.types[section][@"methods"];
+    NSArray *methods = self.methodsByType[section][@"methods"];
     return methods.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MethodCell" forIndexPath:indexPath];
-    NSArray *methods = self.types[indexPath.section][@"methods"];
+    NSArray *methods = self.methodsByType[indexPath.section][@"methods"];
     NSDictionary *method = methods[indexPath.row];
     cell.textLabel.text = method[@"name"];
     return cell;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
-    return self.types[section][@"type"];
+    return self.methodsByType[section][@"type"];
 }
 
-#pragma mark UITableViewDelegate
+#pragma mark Protocols (UITableViewDelegate)
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-
-    NSArray *methods = self.types[indexPath.section][@"methods"];
+    NSArray *methods = self.methodsByType[indexPath.section][@"methods"];
     NSDictionary *method = methods[indexPath.row];
     NSArray *methodParameters = method[@"parameters"];
 
+    // Get parameter values if method requires parameters or request it immediately.
     if (methodParameters.count == 0) {
         [self performSegueWithIdentifier:@"RequestMethod" sender:self];
     } else {

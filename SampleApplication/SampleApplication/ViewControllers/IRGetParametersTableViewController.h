@@ -1,5 +1,5 @@
 //
-//  IRGetParametersViewController.h
+//  IRGetParametersTableViewController.h
 //  SampleApplication
 //
 //  Created by Maxim Pervushin on 20/08/14.
@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface IRGetParametersViewController : UITableViewController
+/*
+    Shows a list of parameters for Independent Reserve API method.
+ */
+@interface IRGetParametersTableViewController : UITableViewController
 
 @property (nonatomic, copy) NSString *methodName;
 @property (nonatomic, strong) NSArray *requiredParameters;

@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+/*
+    Shows a list of Independent Reserve API methods in table view.
+ */
 @interface IRMethodsListTableViewController : UITableViewController
 
 @end

@@ -97,7 +97,7 @@ typedef void (^IRAPIManagerResponseHandler)(id content, NSError *error);
     @method getValidLimitOrderTypesResponseHandler:
 
     @abstract
-        Retrieves valid limit order types.
+        Retrieves valid limit order methodsByType.
 
     @param
         responseHandler
@@ -109,7 +109,7 @@ typedef void (^IRAPIManagerResponseHandler)(id content, NSError *error);
     @method getValidMarketOrderTypesResponseHandler:
 
     @abstract
-        Retrieves valid market order types.
+        Retrieves valid market order methodsByType.
 
     @param
         responseHandler

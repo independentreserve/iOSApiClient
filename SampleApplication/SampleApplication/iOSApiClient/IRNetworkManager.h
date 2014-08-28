@@ -8,6 +8,13 @@
 
 #import "IRNetworkManagement.h"
 
+/*!
+    @class
+        IRNetworkManager
+    
+    @abstract
+        Default implementation of IRNetworkManagement protocol.
+ */
 @interface IRNetworkManager : NSObject <IRNetworkManagement>
 
 @end

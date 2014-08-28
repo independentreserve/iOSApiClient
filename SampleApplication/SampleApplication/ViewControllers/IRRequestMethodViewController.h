@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+/*
+    Performs request to Independent Reserve API and shows result.
+ */
 @interface IRRequestMethodViewController : UIViewController
 
 @property (nonatomic, copy) NSString *methodName;

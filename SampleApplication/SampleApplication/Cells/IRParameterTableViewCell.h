@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+/*
+ Table view cell with property for parameter name storage.
+ */
 @interface IRParameterTableViewCell : UITableViewCell
 
 @property (nonatomic, copy) NSString *parameterName;

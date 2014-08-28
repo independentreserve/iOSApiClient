@@ -16,7 +16,7 @@
 		C5093DB719AC9CC4008D01A4 /* IRGetStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5093DB619AC9CC4008D01A4 /* IRGetStringViewController.m */; };
 		C5093DBA19AC9D5D008D01A4 /* IRGetValueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5093DB919AC9D5D008D01A4 /* IRGetValueViewController.m */; };
 		C54D751719A4A32E002C533D /* IRRequestMethodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C54D751619A4A32E002C533D /* IRRequestMethodViewController.m */; };
-		C54D751A19A4B22A002C533D /* IRGetParametersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C54D751919A4B22A002C533D /* IRGetParametersViewController.m */; };
+		C54D751A19A4B22A002C533D /* IRGetParametersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C54D751919A4B22A002C533D /* IRGetParametersTableViewController.m */; };
 		C5518E1119A31B4700FC57D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5518E1019A31B4700FC57D1 /* Foundation.framework */; };
 		C5518E1319A31B4700FC57D1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5518E1219A31B4700FC57D1 /* CoreGraphics.framework */; };
 		C5518E1519A31B4700FC57D1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5518E1419A31B4700FC57D1 /* UIKit.framework */; };
@@ -66,8 +66,8 @@
 		C5093DB919AC9D5D008D01A4 /* IRGetValueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IRGetValueViewController.m; path = ViewControllers/IRGetValueViewController.m; sourceTree = "<group>"; };
 		C54D751519A4A32E002C533D /* IRRequestMethodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IRRequestMethodViewController.h; path = ViewControllers/IRRequestMethodViewController.h; sourceTree = "<group>"; };
 		C54D751619A4A32E002C533D /* IRRequestMethodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IRRequestMethodViewController.m; path = ViewControllers/IRRequestMethodViewController.m; sourceTree = "<group>"; };
-		C54D751819A4B22A002C533D /* IRGetParametersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IRGetParametersViewController.h; path = ViewControllers/IRGetParametersViewController.h; sourceTree = "<group>"; };
-		C54D751919A4B22A002C533D /* IRGetParametersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IRGetParametersViewController.m; path = ViewControllers/IRGetParametersViewController.m; sourceTree = "<group>"; };
+		C54D751819A4B22A002C533D /* IRGetParametersTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IRGetParametersTableViewController.h; path = ViewControllers/IRGetParametersTableViewController.h; sourceTree = "<group>"; };
+		C54D751919A4B22A002C533D /* IRGetParametersTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IRGetParametersTableViewController.m; path = ViewControllers/IRGetParametersTableViewController.m; sourceTree = "<group>"; };
 		C5518E0D19A31B4700FC57D1 /* SampleApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5518E1019A31B4700FC57D1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C5518E1219A31B4700FC57D1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -225,22 +225,22 @@
 		C5518E4219A3244E00FC57D1 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				73BC64F0C6EFE957E5D03959 /* IRMethodsListTableViewController.h */,
-				73BC6C4569FA2276DC71D00F /* IRMethodsListTableViewController.m */,
-				C54D751519A4A32E002C533D /* IRRequestMethodViewController.h */,
-				C54D751619A4A32E002C533D /* IRRequestMethodViewController.m */,
-				C54D751819A4B22A002C533D /* IRGetParametersViewController.h */,
-				C54D751919A4B22A002C533D /* IRGetParametersViewController.m */,
+				C5093DB219AC9CAE008D01A4 /* IRGetDateViewController.h */,
+				C5093DB319AC9CAE008D01A4 /* IRGetDateViewController.m */,
 				C5AC1C9319AB59E800878F8D /* IRGetNumberViewController.h */,
 				C5AC1C9419AB59E800878F8D /* IRGetNumberViewController.m */,
 				C58FAB2419AC854C00BB4E2F /* IRGetOptionViewController.h */,
 				C58FAB2519AC854C00BB4E2F /* IRGetOptionViewController.m */,
-				C5093DB219AC9CAE008D01A4 /* IRGetDateViewController.h */,
-				C5093DB319AC9CAE008D01A4 /* IRGetDateViewController.m */,
+				C54D751819A4B22A002C533D /* IRGetParametersTableViewController.h */,
+				C54D751919A4B22A002C533D /* IRGetParametersTableViewController.m */,
 				C5093DB519AC9CC4008D01A4 /* IRGetStringViewController.h */,
 				C5093DB619AC9CC4008D01A4 /* IRGetStringViewController.m */,
 				C5093DB819AC9D5D008D01A4 /* IRGetValueViewController.h */,
 				C5093DB919AC9D5D008D01A4 /* IRGetValueViewController.m */,
+				73BC64F0C6EFE957E5D03959 /* IRMethodsListTableViewController.h */,
+				73BC6C4569FA2276DC71D00F /* IRMethodsListTableViewController.m */,
+				C54D751519A4A32E002C533D /* IRRequestMethodViewController.h */,
+				C54D751619A4A32E002C533D /* IRRequestMethodViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -385,7 +385,7 @@
 				C5518E2119A31B4700FC57D1 /* IRAppDelegate.m in Sources */,
 				C5AC1C9519AB59E800878F8D /* IRGetNumberViewController.m in Sources */,
 				C5093DB419AC9CAE008D01A4 /* IRGetDateViewController.m in Sources */,
-				C54D751A19A4B22A002C533D /* IRGetParametersViewController.m in Sources */,
+				C54D751A19A4B22A002C533D /* IRGetParametersTableViewController.m in Sources */,
 				C54D751719A4A32E002C533D /* IRRequestMethodViewController.m in Sources */,
 				C5AC1C8F19AB498100878F8D /* IRParameterTableViewCell.m in Sources */,
 				73BC69A9ABF08513AD3E0FF8 /* IRMethodsListTableViewController.m in Sources */,

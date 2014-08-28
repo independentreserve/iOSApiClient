@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+/*
+ Declares a method for tracking parameter value changes.
+ */
 @protocol IRParameterChangeDelegate <NSObject>
 
 - (void)parameter:(NSString *)parameter valueChanged:(id)newValue;

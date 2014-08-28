@@ -8,6 +8,9 @@
 
 #import "IRGetValueViewController.h"
 
+/*
+    IRGetValueViewController inheritor for NSNumber values.
+ */
 @interface IRGetNumberViewController : IRGetValueViewController
 
 @end

@@ -36,8 +36,7 @@
         });
     };
 
-    // TODO: Yes, I know about NSInvocation and performSelector:, but parameters order...
-
+    // Invoke IRAPIManager method corresponding to IR API method.
     if ([self.methodName isEqualToString:IRAPI_GetValidPrimaryCurrencyCodesMethod]) {
         [[IRAPIManager manager] getValidPrimaryCurrencyCodesResponseHandler:responseHandler];
 

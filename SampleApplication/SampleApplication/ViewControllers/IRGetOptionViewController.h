@@ -8,6 +8,9 @@
 
 #import "IRGetValueViewController.h"
 
+/*
+    IRGetValueViewController inheritor with multiple string options.
+ */
 @interface IRGetOptionViewController : IRGetValueViewController
 
 @property (nonatomic, strong) NSArray *options;

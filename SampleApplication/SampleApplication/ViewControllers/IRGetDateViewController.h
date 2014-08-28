@@ -8,6 +8,9 @@
 
 #import "IRGetValueViewController.h"
 
+/*
+    IRGetValueViewController inheritor for NSDate values.
+ */
 @interface IRGetDateViewController : IRGetValueViewController
 
 @end

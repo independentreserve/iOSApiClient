@@ -7,52 +7,37 @@
 //
 
 #import "IRAPIManager.h"
-#import "NSString+IRSignature.h"
 #import "IRConstants.h"
 #import "IRNetworkManagement.h"
 #import "IRNetworkManager.h"
+#import "NSString+IRSignature.h"
 
 @interface IRAPIManager ()
 
+// Current timestamp converted to string object.
 @property (nonatomic, readonly) NSString *nonce;
+// Dictionary with parameters required for private methods (nonce, API key, signature).
 @property (nonatomic, readonly) NSMutableDictionary *privateRequiredParameters;
 
+// Returns full URL string for public method with name specified.
 - (NSString *)publicMethodFullURLString:(NSString *)methodName;
 
+// Returns full URL string for private method with name specified.
 - (NSString *)privateMethodFullURLString:(NSString *)methodName;
 
 @end
 
 @implementation IRAPIManager
+@dynamic nonce;
+@dynamic privateRequiredParameters;
 @synthesize networkManager = networkManager_;
 @synthesize publicAPIRoot = publicAPIRoot_;
 @synthesize privateAPIRoot = privateAPIRoot_;
 @synthesize apiKey = apiKey_;
 @synthesize apiSecret = apiSecret_;
 
-- (id <IRNetworkManagement>)networkManager {
-    if (networkManager_ == nil) {
-        return [IRNetworkManager manager];
-    }
-
-    return networkManager_;
-}
-
-- (NSString *)publicAPIRoot {
-    if (publicAPIRoot_ == nil) {
-        return IRAPI_RootPublic;
-    }
-
-    return publicAPIRoot_;
-}
-
-- (NSString *)privateAPIRoot {
-    if (privateAPIRoot_ == nil) {
-        return IRAPI_RootPrivate;
-    }
-
-    return privateAPIRoot_;
-}
+#pragma mark - Methods
+#pragma mark Methods (Static)
 
 + (instancetype)manager {
     static IRAPIManager *manager;
@@ -64,27 +49,78 @@
     return manager;
 }
 
-#pragma mark - Public API Methods
+#pragma mark Methods (Public)
+
+- (id <IRNetworkManagement>)networkManager {
+    if (networkManager_ == nil) {
+        // Use default IRNetworkManager object if property is not set.
+        return [IRNetworkManager manager];
+    }
+
+    return networkManager_;
+}
+
+- (NSString *)publicAPIRoot {
+    if (publicAPIRoot_ == nil) {
+        // Use IRAPI_RootPublic if property is not set.
+        return IRAPI_RootPublic;
+    }
+
+    return publicAPIRoot_;
+}
+
+- (NSString *)privateAPIRoot {
+    if (privateAPIRoot_ == nil) {
+        // Use IRAPI_RootPrivate if property is not set.
+        return IRAPI_RootPrivate;
+    }
+
+    return privateAPIRoot_;
+}
+
+- (NSString *)apiKey {
+    if (apiKey_ == nil || ![apiKey_ isKindOfClass:NSString.class] || [apiKey_ isEqualToString:@""]) {
+        // Return value of 'IndependentReserveAPIKey' property from info.plist if property is not set
+        return [[NSBundle mainBundle] objectForInfoDictionaryKey:@"IndependentReserveAPIKey"];
+    }
+
+    return apiKey_;
+}
+
+- (NSString *)apiSecret {
+    if (apiSecret_ == nil || ![apiSecret_ isKindOfClass:NSString.class] || [apiSecret_ isEqualToString:@""]) {
+        // Return value of 'IndependentReserveAPISecret' property from info.plist if property is not set
+        return [[NSBundle mainBundle] objectForInfoDictionaryKey:@"IndependentReserveAPISecret"];
+    }
+
+    return apiSecret_;
+}
+
+#pragma mark Independent Reserve API Public Methods
 
 - (void)getValidPrimaryCurrencyCodesResponseHandler:(IRAPIManagerResponseHandler)responseHandler {
+    // Perform request
     [self.networkManager GET:[self publicMethodFullURLString:IRAPI_GetValidPrimaryCurrencyCodesMethod]
                   parameters:nil
                      handler:responseHandler];
 }
 
 - (void)getValidSecondaryCurrencyCodesResponseHandler:(IRAPIManagerResponseHandler)responseHandler {
+    // Perform request
     [self.networkManager GET:[self publicMethodFullURLString:IRAPI_GetValidSecondaryCurrencyCodesMethod]
                   parameters:nil
                      handler:responseHandler];
 }
 
 - (void)getValidLimitOrderTypesResponseHandler:(IRAPIManagerResponseHandler)responseHandler {
+    // Perform request
     [self.networkManager GET:[self publicMethodFullURLString:IRAPI_GetValidLimitOrderTypesMethod]
                   parameters:nil
                      handler:responseHandler];
 }
 
 - (void)getValidMarketOrderTypesResponseHandler:(IRAPIManagerResponseHandler)responseHandler {
+    // Perform request
     [self.networkManager GET:[self publicMethodFullURLString:IRAPI_GetValidMarketOrderTypesMethod]
                   parameters:nil
                      handler:responseHandler];
@@ -94,6 +130,7 @@
                          secondaryCurrencyCode:(NSString *)secondaryCurrencyCode
                                responseHandler:(IRAPIManagerResponseHandler)responseHandler {
 
+    // Prepare parameters
     NSMutableDictionary *parameters = [NSMutableDictionary new];
     if (primaryCurrencyCode != nil) {
         parameters[IRAPI_PrimaryCurrencyCodeParameter] = primaryCurrencyCode;
@@ -102,6 +139,7 @@
         parameters[IRAPI_SecondaryCurrencyCodeParameter] = secondaryCurrencyCode;
     }
 
+    // Perform request
     [self.networkManager GET:[self publicMethodFullURLString:IRAPI_GetMarketSummaryMethod]
                   parameters:parameters
                      handler:responseHandler];
@@ -111,6 +149,7 @@
                      secondaryCurrencyCode:(NSString *)secondaryCurrencyCode
                            responseHandler:(IRAPIManagerResponseHandler)responseHandler {
 
+    // Prepare parameters
     NSMutableDictionary *parameters = [NSMutableDictionary new];
     if (primaryCurrencyCode != nil) {
         parameters[IRAPI_PrimaryCurrencyCodeParameter] = primaryCurrencyCode;
@@ -119,6 +158,7 @@
         parameters[IRAPI_SecondaryCurrencyCodeParameter] = secondaryCurrencyCode;
     }
 
+    // Perform request
     [self.networkManager GET:[self publicMethodFullURLString:IRAPI_GetOrderBookMethod]
                   parameters:parameters
                      handler:responseHandler];
@@ -129,6 +169,7 @@
                     numberOfHoursInThePastToRetrieve:(NSNumber *)numberOfHoursInThePastToRetrieve
                                      responseHandler:(IRAPIManagerResponseHandler)responseHandler {
 
+    // Prepare parameters
     NSMutableDictionary *parameters = [NSMutableDictionary new];
     if (primaryCurrencyCode != nil) {
         parameters[IRAPI_PrimaryCurrencyCodeParameter] = primaryCurrencyCode;
@@ -140,6 +181,7 @@
         parameters[IRAPI_NumberOfHoursInThePastToRetrieveParameter] = numberOfHoursInThePastToRetrieve;
     }
 
+    // Perform request
     [self.networkManager GET:[self publicMethodFullURLString:IRAPI_GetTradeHistorySummaryMethod]
                   parameters:parameters
                      handler:responseHandler];
@@ -150,6 +192,7 @@
                numberOfRecentTradesToRetrieve:(NSNumber *)numberOfRecentTradesToRetrieve
                               responseHandler:(IRAPIManagerResponseHandler)responseHandler {
 
+    // Prepare parameters
     NSMutableDictionary *parameters = [NSMutableDictionary new];
     if (primaryCurrencyCode != nil) {
         parameters[IRAPI_PrimaryCurrencyCodeParameter] = primaryCurrencyCode;
@@ -161,12 +204,13 @@
         parameters[IRAPI_NumberOfRecentTradesToRetrieveParameter] = numberOfRecentTradesToRetrieve;
     }
 
+    // Perform request
     [self.networkManager GET:[self publicMethodFullURLString:IRAPI_GetRecentTradesMethod]
                   parameters:parameters
                      handler:responseHandler];
 }
 
-#pragma mark - Private API Methods
+#pragma mark Independent Reserve API Private Methods
 
 - (void)placeLimitOrderWithPrimaryCurrencyCode:(NSString *)primaryCurrencyCode
                          secondaryCurrencyCode:(NSString *)secondaryCurrencyCode
@@ -175,8 +219,8 @@
                                         volume:(NSNumber *)volume
                                responseHandler:(IRAPIManagerResponseHandler)responseHandler {
 
+    // Prepare parameters
     NSMutableDictionary *parameters = [self.privateRequiredParameters mutableCopy];
-
     if (primaryCurrencyCode != nil) {
         parameters[IRAPI_PrimaryCurrencyCodeParameter] = primaryCurrencyCode;
     }
@@ -193,6 +237,7 @@
         parameters[IRAPI_VolumeParameter] = volume;
     }
 
+    // Perform request
     [self.networkManager POST:[self privateMethodFullURLString:IRAPI_PlaceLimitOrderMethod]
                    parameters:parameters
                       handler:responseHandler];
@@ -203,8 +248,8 @@
                                          volume:(NSNumber *)volume
                                 responseHandler:(IRAPIManagerResponseHandler)responseHandler {
 
+    // Prepare parameters
     NSMutableDictionary *parameters = [self.privateRequiredParameters mutableCopy];
-
     if (primaryCurrencyCode != nil) {
         parameters[IRAPI_PrimaryCurrencyCodeParameter] = primaryCurrencyCode;
     }
@@ -218,6 +263,7 @@
         parameters[IRAPI_VolumeParameter] = volume;
     }
 
+    // Perform request
     [self.networkManager POST:[self privateMethodFullURLString:IRAPI_PlaceMarketOrderMethod]
                    parameters:parameters
                       handler:responseHandler];
@@ -225,12 +271,13 @@
 
 - (void)cancelOrderWithGUID:(NSString *)orderGUID responseHandler:(IRAPIManagerResponseHandler)responseHandler {
 
+    // Prepare parameters
     NSMutableDictionary *parameters = [self.privateRequiredParameters mutableCopy];
-
     if (orderGUID != nil) {
         parameters[IRAPI_OrderGUIDParameter] = orderGUID;
     }
 
+    // Perform request
     [self.networkManager POST:[self privateMethodFullURLString:IRAPI_CancelOrderMethod]
                    parameters:parameters
                       handler:responseHandler];
@@ -242,8 +289,8 @@
                                     pageSize:(NSNumber *)pageSize
                              responseHandler:(IRAPIManagerResponseHandler)responseHandler {
 
+    // Prepare parameters
     NSMutableDictionary *parameters = [self.privateRequiredParameters mutableCopy];
-
     if (primaryCurrencyCode != nil) {
         parameters[IRAPI_PrimaryCurrencyCodeParameter] = primaryCurrencyCode;
     }
@@ -257,6 +304,7 @@
         parameters[IRAPI_PageSizeParameter] = pageSize;
     }
 
+    // Perform request
     [self.networkManager POST:[self privateMethodFullURLString:IRAPI_GetOpenOrdersMethod]
                    parameters:parameters
                       handler:responseHandler];
@@ -268,8 +316,8 @@
                                       pageSize:(NSNumber *)pageSize
                                responseHandler:(IRAPIManagerResponseHandler)responseHandler {
 
+    // Prepare parameters
     NSMutableDictionary *parameters = [self.privateRequiredParameters mutableCopy];
-
     if (primaryCurrencyCode != nil) {
         parameters[IRAPI_PrimaryCurrencyCodeParameter] = primaryCurrencyCode;
     }
@@ -283,6 +331,7 @@
         parameters[IRAPI_PageSizeParameter] = pageSize;
     }
 
+    // Perform request
     [self.networkManager POST:[self privateMethodFullURLString:IRAPI_GetClosedOrdersMethod]
                    parameters:parameters
                       handler:responseHandler];
@@ -290,8 +339,10 @@
 
 - (void)getAccountsWithResponseHandler:(IRAPIManagerResponseHandler)responseHandler {
 
+    // Prepare parameters
     NSMutableDictionary *parameters = [self.privateRequiredParameters mutableCopy];
 
+    // Perform request
     [self.networkManager POST:[self privateMethodFullURLString:IRAPI_GetAccountsMethod]
                    parameters:parameters
                       handler:responseHandler];
@@ -304,11 +355,12 @@
                               pageSize:(NSNumber *)pageSize
                        responseHandler:(IRAPIManagerResponseHandler)responseHandler {
 
+    // Prepare parameters
     NSMutableDictionary *parameters = [self.privateRequiredParameters mutableCopy];
-
     if (accountGUID != nil) {
         parameters[IRAPI_AccountGUIDParameter] = accountGUID;
     }
+    // Convert fromDate and toDate to ISO 8601 standard string.
     NSDateFormatter *formatter = [NSDateFormatter new];
     formatter.dateFormat = @"yyyy-MM-dd'T'HH:mm:ss'Z'";
     formatter.timeZone = [NSTimeZone timeZoneWithName:@"UTC"];
@@ -326,12 +378,14 @@
         parameters[IRAPI_PageSizeParameter] = pageSize;
     }
 
+    // Perform request
     [self.networkManager POST:[self privateMethodFullURLString:IRAPI_GetTransactionsMethod]
                    parameters:parameters
                       handler:responseHandler];
 }
 
 - (void)getBitcoinDepositAddressWithResponseHandler:(IRAPIManagerResponseHandler)responseHandler {
+    // Perform request
     [self.networkManager POST:[self privateMethodFullURLString:IRAPI_GetBitcoinDepositAddressMethod]
                    parameters:[self.privateRequiredParameters mutableCopy]
                       handler:responseHandler];
@@ -354,7 +408,7 @@
     if (self.apiKey != nil && self.apiSecret != nil) {
         requiredParameters[IRAPI_APIKeyParameter] = self.apiKey;
         requiredParameters[IRAPI_SignatureParameter]
-            = [NSString signatureStringWithAPISecret:self.apiSecret apiKey:self.apiKey nonce:nonce];
+            = [NSString signatureStringWithAPIKey:self.apiSecret apiSecret:self.apiKey nonce:nonce];
     } else {
         NSLog(@"WARNING: Independent Reserve API key or API secret is not set. Private methods will not work.");
     }
@@ -368,24 +422,6 @@
 
 - (NSString *)privateMethodFullURLString:(NSString *)methodName {
     return [NSString stringWithFormat:@"%@/%@", self.privateAPIRoot, methodName];
-}
-
-- (NSString *)apiKey {
-    if (apiKey_ == nil || ![apiKey_ isKindOfClass:NSString.class] || [apiKey_ isEqualToString:@""]) {
-        // Return value of 'IndependentReserveAPIKey' property from info.plist if property is not set
-        return [[NSBundle mainBundle] objectForInfoDictionaryKey:@"IndependentReserveAPIKey"];
-    }
-
-    return apiKey_;
-}
-
-- (NSString *)apiSecret {
-    if (apiSecret_ == nil || ![apiSecret_ isKindOfClass:NSString.class] || [apiSecret_ isEqualToString:@""]) {
-        // Return value of 'IndependentReserveAPISecret' property from info.plist if property is not set
-        return [[NSBundle mainBundle] objectForInfoDictionaryKey:@"IndependentReserveAPISecret"];
-    }
-
-    return apiSecret_;
 }
 
 @end

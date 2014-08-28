@@ -5,8 +5,19 @@
 
 #import <Foundation/Foundation.h>
 
+/*!
+    @category   
+        IRHexadecimalString
+ */
 @interface NSData (IRHexadecimalString)
 
+/*!
+    @method
+        hexadecimalString
+
+    @return
+        NSString object containing hexadecimal representation of NSData object.
+ */
 - (NSString *)hexadecimalString;
 
 @end

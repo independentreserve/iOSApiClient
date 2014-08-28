@@ -10,7 +10,6 @@
 
 @interface IRGetOptionViewController () <UIPickerViewDataSource>
 
-//@property (nonatomic, readonly) NSArray *options;
 @property (nonatomic, weak) IBOutlet UILabel *parameterNameLabel;
 @property (nonatomic, weak) IBOutlet UIPickerView *pickerView;
 
