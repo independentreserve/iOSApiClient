@@ -7,7 +7,6 @@
 //
 
 #import "IRGetParametersTableViewController.h"
-#import "IRConstants.h"
 #import "IRParameterChangeDelegate.h"
 #import "IRParameterTableViewCell.h"
 #import "IRGetOptionViewController.h"

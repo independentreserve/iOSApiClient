@@ -9,7 +9,7 @@
 #import "IRMethodsListTableViewController.h"
 #import "IRRequestMethodViewController.h"
 #import "IRGetParametersTableViewController.h"
-#import "IRConstants.h"
+#import <APIClient/IRConstants.h>
 
 @interface IRMethodsListTableViewController ()
 

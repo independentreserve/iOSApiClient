@@ -1,0 +1,532 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		C5F7631A19B0753500029C71 /* APIClientUniversalLibrary */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C5F7631B19B0753500029C71 /* Build configuration list for PBXAggregateTarget "APIClientUniversalLibrary" */;
+			buildPhases = (
+				C5F7631E19B0755900029C71 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = APIClientUniversalLibrary;
+			productName = APIClientUniversalLibrary;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		C54412EE19B05D00006AFCAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C54412ED19B05D00006AFCAD /* Foundation.framework */; };
+		C54412FC19B05D00006AFCAD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C54412FB19B05D00006AFCAD /* XCTest.framework */; };
+		C54412FD19B05D00006AFCAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C54412ED19B05D00006AFCAD /* Foundation.framework */; };
+		C54412FF19B05D00006AFCAD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C54412FE19B05D00006AFCAD /* UIKit.framework */; };
+		C544130219B05D00006AFCAD /* libAPIClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C54412EA19B05D00006AFCAD /* libAPIClient.a */; };
+		C544130819B05D00006AFCAD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C544130619B05D00006AFCAD /* InfoPlist.strings */; };
+		C544130A19B05D00006AFCAD /* APIClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C544130919B05D00006AFCAD /* APIClientTests.m */; };
+		C544131F19B05D37006AFCAD /* NSData+IRHexadecimalString.m in Sources */ = {isa = PBXBuildFile; fileRef = C544131519B05D37006AFCAD /* NSData+IRHexadecimalString.m */; };
+		C544132019B05D37006AFCAD /* NSData+IRHexadecimalString.m in Sources */ = {isa = PBXBuildFile; fileRef = C544131519B05D37006AFCAD /* NSData+IRHexadecimalString.m */; };
+		C544132119B05D37006AFCAD /* NSString+IRSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = C544131719B05D37006AFCAD /* NSString+IRSignature.m */; };
+		C544132219B05D37006AFCAD /* NSString+IRSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = C544131719B05D37006AFCAD /* NSString+IRSignature.m */; };
+		C544132319B05D37006AFCAD /* IRAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C544131919B05D37006AFCAD /* IRAPIManager.m */; };
+		C544132419B05D37006AFCAD /* IRAPIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C544131919B05D37006AFCAD /* IRAPIManager.m */; };
+		C544132519B05D37006AFCAD /* IRConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = C544131B19B05D37006AFCAD /* IRConstants.m */; };
+		C544132619B05D37006AFCAD /* IRConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = C544131B19B05D37006AFCAD /* IRConstants.m */; };
+		C544132719B05D37006AFCAD /* IRNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C544131E19B05D37006AFCAD /* IRNetworkManager.m */; };
+		C544132819B05D37006AFCAD /* IRNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C544131E19B05D37006AFCAD /* IRNetworkManager.m */; };
+		C5F7631319B070EB00029C71 /* NSData+IRHexadecimalString.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C544131419B05D37006AFCAD /* NSData+IRHexadecimalString.h */; };
+		C5F7631419B070EB00029C71 /* NSString+IRSignature.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C544131619B05D37006AFCAD /* NSString+IRSignature.h */; };
+		C5F7631519B070EB00029C71 /* IRAPIManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C544131819B05D37006AFCAD /* IRAPIManager.h */; };
+		C5F7631619B070EB00029C71 /* IRConstants.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C544131A19B05D37006AFCAD /* IRConstants.h */; };
+		C5F7631719B070EB00029C71 /* IRNetworkManagement.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C544131C19B05D37006AFCAD /* IRNetworkManagement.h */; };
+		C5F7631819B070EB00029C71 /* IRNetworkManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C544131D19B05D37006AFCAD /* IRNetworkManager.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C544130019B05D00006AFCAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C54412E219B05D00006AFCAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C54412E919B05D00006AFCAD;
+			remoteInfo = APIClient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C54412E819B05D00006AFCAD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				C5F7631319B070EB00029C71 /* NSData+IRHexadecimalString.h in CopyFiles */,
+				C5F7631419B070EB00029C71 /* NSString+IRSignature.h in CopyFiles */,
+				C5F7631519B070EB00029C71 /* IRAPIManager.h in CopyFiles */,
+				C5F7631619B070EB00029C71 /* IRConstants.h in CopyFiles */,
+				C5F7631719B070EB00029C71 /* IRNetworkManagement.h in CopyFiles */,
+				C5F7631819B070EB00029C71 /* IRNetworkManager.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C54412EA19B05D00006AFCAD /* libAPIClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAPIClient.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C54412ED19B05D00006AFCAD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C54412F119B05D00006AFCAD /* APIClient-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "APIClient-Prefix.pch"; sourceTree = "<group>"; };
+		C54412FA19B05D00006AFCAD /* APIClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APIClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C54412FB19B05D00006AFCAD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C54412FE19B05D00006AFCAD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		C544130519B05D00006AFCAD /* APIClientTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "APIClientTests-Info.plist"; sourceTree = "<group>"; };
+		C544130719B05D00006AFCAD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C544130919B05D00006AFCAD /* APIClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIClientTests.m; sourceTree = "<group>"; };
+		C544131419B05D37006AFCAD /* NSData+IRHexadecimalString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+IRHexadecimalString.h"; sourceTree = "<group>"; };
+		C544131519B05D37006AFCAD /* NSData+IRHexadecimalString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+IRHexadecimalString.m"; sourceTree = "<group>"; };
+		C544131619B05D37006AFCAD /* NSString+IRSignature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+IRSignature.h"; sourceTree = "<group>"; };
+		C544131719B05D37006AFCAD /* NSString+IRSignature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+IRSignature.m"; sourceTree = "<group>"; };
+		C544131819B05D37006AFCAD /* IRAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRAPIManager.h; sourceTree = "<group>"; };
+		C544131919B05D37006AFCAD /* IRAPIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRAPIManager.m; sourceTree = "<group>"; };
+		C544131A19B05D37006AFCAD /* IRConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRConstants.h; sourceTree = "<group>"; };
+		C544131B19B05D37006AFCAD /* IRConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRConstants.m; sourceTree = "<group>"; };
+		C544131C19B05D37006AFCAD /* IRNetworkManagement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRNetworkManagement.h; sourceTree = "<group>"; };
+		C544131D19B05D37006AFCAD /* IRNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRNetworkManager.h; sourceTree = "<group>"; };
+		C544131E19B05D37006AFCAD /* IRNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRNetworkManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C54412E719B05D00006AFCAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C54412EE19B05D00006AFCAD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C54412F719B05D00006AFCAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C54412FC19B05D00006AFCAD /* XCTest.framework in Frameworks */,
+				C544130219B05D00006AFCAD /* libAPIClient.a in Frameworks */,
+				C54412FF19B05D00006AFCAD /* UIKit.framework in Frameworks */,
+				C54412FD19B05D00006AFCAD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C54412E119B05D00006AFCAD = {
+			isa = PBXGroup;
+			children = (
+				C54412EF19B05D00006AFCAD /* APIClient */,
+				C544130319B05D00006AFCAD /* APIClientTests */,
+				C54412EC19B05D00006AFCAD /* Frameworks */,
+				C54412EB19B05D00006AFCAD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C54412EB19B05D00006AFCAD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C54412EA19B05D00006AFCAD /* libAPIClient.a */,
+				C54412FA19B05D00006AFCAD /* APIClientTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C54412EC19B05D00006AFCAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C54412ED19B05D00006AFCAD /* Foundation.framework */,
+				C54412FB19B05D00006AFCAD /* XCTest.framework */,
+				C54412FE19B05D00006AFCAD /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C54412EF19B05D00006AFCAD /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				C544131319B05D37006AFCAD /* Categories */,
+				C544131819B05D37006AFCAD /* IRAPIManager.h */,
+				C544131919B05D37006AFCAD /* IRAPIManager.m */,
+				C544131A19B05D37006AFCAD /* IRConstants.h */,
+				C544131B19B05D37006AFCAD /* IRConstants.m */,
+				C544131C19B05D37006AFCAD /* IRNetworkManagement.h */,
+				C544131D19B05D37006AFCAD /* IRNetworkManager.h */,
+				C544131E19B05D37006AFCAD /* IRNetworkManager.m */,
+				C54412F019B05D00006AFCAD /* Supporting Files */,
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
+		C54412F019B05D00006AFCAD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C54412F119B05D00006AFCAD /* APIClient-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C544130319B05D00006AFCAD /* APIClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				C544130919B05D00006AFCAD /* APIClientTests.m */,
+				C544130419B05D00006AFCAD /* Supporting Files */,
+			);
+			path = APIClientTests;
+			sourceTree = "<group>";
+		};
+		C544130419B05D00006AFCAD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C544130519B05D00006AFCAD /* APIClientTests-Info.plist */,
+				C544130619B05D00006AFCAD /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C544131319B05D37006AFCAD /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				C544131419B05D37006AFCAD /* NSData+IRHexadecimalString.h */,
+				C544131519B05D37006AFCAD /* NSData+IRHexadecimalString.m */,
+				C544131619B05D37006AFCAD /* NSString+IRSignature.h */,
+				C544131719B05D37006AFCAD /* NSString+IRSignature.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C54412E919B05D00006AFCAD /* APIClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C544130D19B05D00006AFCAD /* Build configuration list for PBXNativeTarget "APIClient" */;
+			buildPhases = (
+				C54412E619B05D00006AFCAD /* Sources */,
+				C54412E719B05D00006AFCAD /* Frameworks */,
+				C54412E819B05D00006AFCAD /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = APIClient;
+			productName = APIClient;
+			productReference = C54412EA19B05D00006AFCAD /* libAPIClient.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C54412F919B05D00006AFCAD /* APIClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C544131019B05D00006AFCAD /* Build configuration list for PBXNativeTarget "APIClientTests" */;
+			buildPhases = (
+				C54412F619B05D00006AFCAD /* Sources */,
+				C54412F719B05D00006AFCAD /* Frameworks */,
+				C54412F819B05D00006AFCAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C544130119B05D00006AFCAD /* PBXTargetDependency */,
+			);
+			name = APIClientTests;
+			productName = APIClientTests;
+			productReference = C54412FA19B05D00006AFCAD /* APIClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C54412E219B05D00006AFCAD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Independent Reserve Pty. Ltd.";
+			};
+			buildConfigurationList = C54412E519B05D00006AFCAD /* Build configuration list for PBXProject "APIClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C54412E119B05D00006AFCAD;
+			productRefGroup = C54412EB19B05D00006AFCAD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C54412E919B05D00006AFCAD /* APIClient */,
+				C54412F919B05D00006AFCAD /* APIClientTests */,
+				C5F7631A19B0753500029C71 /* APIClientUniversalLibrary */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C54412F819B05D00006AFCAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C544130819B05D00006AFCAD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C5F7631E19B0755900029C71 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# define output folder environment variable\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target APIClient ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\nxcodebuild -target APIClient -configuration ${CONFIGURATION} -sdk iphonesimulator -arch i386 BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 2. Create universal binary file using lipo\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/lib${PROJECT_NAME}.a\"\n\n# Last touch. copy the header files. Just for convenience\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/include\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C54412E619B05D00006AFCAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C544132519B05D37006AFCAD /* IRConstants.m in Sources */,
+				C544132319B05D37006AFCAD /* IRAPIManager.m in Sources */,
+				C544131F19B05D37006AFCAD /* NSData+IRHexadecimalString.m in Sources */,
+				C544132119B05D37006AFCAD /* NSString+IRSignature.m in Sources */,
+				C544132719B05D37006AFCAD /* IRNetworkManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C54412F619B05D00006AFCAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C544132219B05D37006AFCAD /* NSString+IRSignature.m in Sources */,
+				C544132619B05D37006AFCAD /* IRConstants.m in Sources */,
+				C544132419B05D37006AFCAD /* IRAPIManager.m in Sources */,
+				C544132019B05D37006AFCAD /* NSData+IRHexadecimalString.m in Sources */,
+				C544130A19B05D00006AFCAD /* APIClientTests.m in Sources */,
+				C544132819B05D37006AFCAD /* IRNetworkManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C544130119B05D00006AFCAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C54412E919B05D00006AFCAD /* APIClient */;
+			targetProxy = C544130019B05D00006AFCAD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C544130619B05D00006AFCAD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C544130719B05D00006AFCAD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C544130B19B05D00006AFCAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C544130C19B05D00006AFCAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C544130E19B05D00006AFCAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/APIClient.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "APIClient/APIClient-Prefix.pch";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C544130F19B05D00006AFCAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/APIClient.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "APIClient/APIClient-Prefix.pch";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C544131119B05D00006AFCAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "APIClient/APIClient-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "APIClientTests/APIClientTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C544131219B05D00006AFCAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "APIClient/APIClient-Prefix.pch";
+				INFOPLIST_FILE = "APIClientTests/APIClientTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		C5F7631C19B0753500029C71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C5F7631D19B0753500029C71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C54412E519B05D00006AFCAD /* Build configuration list for PBXProject "APIClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C544130B19B05D00006AFCAD /* Debug */,
+				C544130C19B05D00006AFCAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C544130D19B05D00006AFCAD /* Build configuration list for PBXNativeTarget "APIClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C544130E19B05D00006AFCAD /* Debug */,
+				C544130F19B05D00006AFCAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C544131019B05D00006AFCAD /* Build configuration list for PBXNativeTarget "APIClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C544131119B05D00006AFCAD /* Debug */,
+				C544131219B05D00006AFCAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5F7631B19B0753500029C71 /* Build configuration list for PBXAggregateTarget "APIClientUniversalLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5F7631C19B0753500029C71 /* Debug */,
+				C5F7631D19B0753500029C71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C54412E219B05D00006AFCAD /* Project object */;
+}

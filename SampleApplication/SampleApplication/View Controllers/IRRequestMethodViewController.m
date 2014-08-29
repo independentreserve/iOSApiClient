@@ -7,8 +7,6 @@
 //
 
 #import "IRRequestMethodViewController.h"
-#import "IRAPIManager.h"
-#import "IRConstants.h"
 
 @interface IRRequestMethodViewController ()
 

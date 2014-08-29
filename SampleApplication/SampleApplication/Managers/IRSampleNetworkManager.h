@@ -6,7 +6,8 @@
 //  Copyright (c) 2014 Independent Reserve Pty. Ltd. All rights reserved.
 //
 
-#import "IRNetworkManagement.h"
+#import <APIClient/IRNetworkManagement.h>
+//#import "IRNetworkManagement.h"
 
 /*
  Sample network management class. The only difference from IRNetworkManager class is extra logging.

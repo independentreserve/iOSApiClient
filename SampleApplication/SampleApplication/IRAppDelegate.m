@@ -7,8 +7,8 @@
 //
 
 #import "IRAppDelegate.h"
-#import "IRAPIManager.h"
 #import "IRSampleNetworkManager.h"
+#import <APIClient/IRAPIManager.h>
 
 @implementation IRAppDelegate
 

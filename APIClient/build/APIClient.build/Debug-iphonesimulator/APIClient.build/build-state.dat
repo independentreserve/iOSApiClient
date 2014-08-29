@@ -1,0 +1,324 @@
+TAPIClient
+v6
+r1
+cCheck dependencies
+cProcessPCH /var/folders/21/fltv7wms5qj8yzq7sj0y5zw80000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/APIClient-Prefix-bgrugcgkadjgrehfhmfcidjeolgk/APIClient-Prefix.pch.pch APIClient/APIClient-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/APIClient.build/Debug-iphonesimulator/APIClient.build/Objects-normal/i386/IRConstants.o /Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/IRConstants.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/APIClient.build/Debug-iphonesimulator/APIClient.build/Objects-normal/i386/IRAPIManager.o /Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/IRAPIManager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/APIClient.build/Debug-iphonesimulator/APIClient.build/Objects-normal/i386/NSData+IRHexadecimalString.o /Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/Categories/NSData+IRHexadecimalString.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/APIClient.build/Debug-iphonesimulator/APIClient.build/Objects-normal/i386/NSString+IRSignature.o /Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/Categories/NSString+IRSignature.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/APIClient.build/Debug-iphonesimulator/APIClient.build/Objects-normal/i386/IRNetworkManager.o /Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/IRNetworkManager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLibtool /Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/libAPIClient.a normal i386
+cPBXCp APIClient/Categories/NSData+IRHexadecimalString.h /Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient/NSData+IRHexadecimalString.h
+cPBXCp APIClient/Categories/NSString+IRSignature.h /Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient/NSString+IRSignature.h
+cPBXCp APIClient/IRAPIManager.h /Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient/IRAPIManager.h
+cPBXCp APIClient/IRConstants.h /Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient/IRConstants.h
+cPBXCp APIClient/IRNetworkManagement.h /Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient/IRNetworkManagement.h
+cPBXCp APIClient/IRNetworkManager.h /Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient/IRNetworkManager.h
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk
+c00000000534787640000000000000198
+t1397196644
+s408
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/SDKSettings.plist
+c00000000532A8B9800000000000003B4
+t1395297176
+s948
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/CoreServices/SystemVersion.plist
+c00000000532A8BA0000000000000019E
+t1395297184
+s414
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c00000000532A8BA3000000000088D8C0
+t1395297187
+s8968384
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/include/module.map
+c00000000532A8BD30000000000000ADC
+t1395297235
+s2780
+
+N/Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient/IRAPIManager.h
+t2
+s0
+
+N/Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient/IRConstants.h
+t2
+s0
+
+N/Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient/IRNetworkManagement.h
+t2
+s0
+
+N/Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient/IRNetworkManager.h
+t2
+s0
+
+N/Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient/NSData+IRHexadecimalString.h
+t2
+s0
+
+N/Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient/NSString+IRSignature.h
+t2
+s0
+
+N/Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/libAPIClient.a
+t2
+s0
+
+N/Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/APIClient-Prefix.pch
+c000000005400258000000000000000B6
+t1409295744
+s182
+
+N/Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/Categories/NSData+IRHexadecimalString.h
+c0000000053FED10000000000000001AD
+t1409208576
+s429
+
+N/Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/Categories/NSData+IRHexadecimalString.m
+c0000000053F5D6C000000000000002D6
+t1408620224
+s726
+
+N/Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/Categories/NSString+IRSignature.h
+c0000000053FED3520000000000000434
+t1409209170
+s1076
+
+N/Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/Categories/NSString+IRSignature.m
+c0000000053FED1420000000000000385
+t1409208642
+s901
+
+N/Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/IRAPIManager.h
+c0000000053FEEEB30000000000003B13
+t1409216179
+s15123
+
+N/Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/IRAPIManager.m
+c0000000053FEF7C60000000000003FF8
+t1409218502
+s16376
+
+N/Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/IRConstants.h
+c0000000053FDA4200000000000000821
+t1409131552
+s2081
+
+N/Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/IRConstants.m
+c0000000053FDA42400000000000009D3
+t1409131556
+s2515
+
+N/Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/IRNetworkManagement.h
+c0000000053FEE7A30000000000000613
+t1409214371
+s1555
+
+N/Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/IRNetworkManager.h
+c0000000053FEE9490000000000000190
+t1409214793
+s400
+
+N/Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/IRNetworkManager.m
+c0000000053FDA9B40000000000000E46
+t1409132980
+s3654
+
+N/Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/Objects-normal/i386/APIClient.LinkFileList
+c00000000540044800000000000000302
+t1409303680
+s770
+
+N/Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/Objects-normal/i386/IRAPIManager.o
+t1409303680
+s52236
+
+N/Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/Objects-normal/i386/IRConstants.o
+t1409303680
+s10428
+
+N/Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/Objects-normal/i386/IRNetworkManager.o
+t1409303680
+s27560
+
+N/Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/Objects-normal/i386/NSData+IRHexadecimalString.o
+t1409303680
+s6428
+
+N/Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/Objects-normal/i386/NSString+IRSignature.o
+t1409303680
+s7972
+
+N/var/folders/21/fltv7wms5qj8yzq7sj0y5zw80000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/APIClient-Prefix-bgrugcgkadjgrehfhmfcidjeolgk/APIClient-Prefix.pch.pch
+t1409303144
+s114364
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesace61d007cb0b941^d7fb29007cb0b941^---0#1#1#--18"Check dependencies36"3ACAC7F7-6E26-4287-9B28-8D6C5CC1DF89-
+
+CCompileC build/APIClient.build/Debug-iphonesimulator/APIClient.build/Objects-normal/i386/IRAPIManager.o /Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/IRAPIManager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s430996480.167608
+e430996480.242940
+r1
+xCompileC
+xbuild/APIClient.build/Debug-iphonesimulator/APIClient.build/Objects-normal/i386/IRAPIManager.o
+x/Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/IRAPIManager.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/IRAPIManager.m
+d/Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/IRAPIManager.h
+d/Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/IRConstants.h
+d/Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/IRNetworkManagement.h
+d/Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/IRNetworkManager.h
+d/Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/Categories/NSString+IRSignature.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection86"Compile /Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/IRAPIManager.m196"CompileC build/APIClient.build/Debug-iphonesimulator/APIClient.build/Objects-normal/i386/IRAPIManager.o APIClient/IRAPIManager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compileree422b007cb0b941^83313e007cb0b941^---0#0#1#-19%DVTDocumentLocation2@85"file:///Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/IRAPIManager.m0000000000000000^3642"CompileC build/APIClient.build/Debug-iphonesimulator/APIClient.build/Objects-normal/i386/IRAPIManager.o APIClient/IRAPIManager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/maximpervushin/Projects/iOSApiClient/APIClient    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/APIClient-generated-files.hmap -I/Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/APIClient-own-target-headers.hmap -I/Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/APIClient-all-target-headers.hmap -iquote /Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/APIClient-project-headers.hmap -I/Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/DerivedSources/i386 -I/Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/DerivedSources -F/Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator -include /var/folders/21/fltv7wms5qj8yzq7sj0y5zw80000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/APIClient-Prefix-bgrugcgkadjgrehfhmfcidjeolgk/APIClient-Prefix.pch -MMD -MT dependencies -MF /Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/Objects-normal/i386/IRAPIManager.d --serialize-diagnostics /Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/Objects-normal/i386/IRAPIManager.dia -c /Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/IRAPIManager.m -o /Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/Objects-normal/i386/IRAPIManager.o36"0FF059E0-B1E7-4F2F-94E4-839DC6E67756-
+b7BB955A2-B485-451A-BE45-2EE91BC5A6E4
+
+CCompileC build/APIClient.build/Debug-iphonesimulator/APIClient.build/Objects-normal/i386/IRConstants.o /Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/IRConstants.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s430996480.167279
+e430996480.209520
+r1
+xCompileC
+xbuild/APIClient.build/Debug-iphonesimulator/APIClient.build/Objects-normal/i386/IRConstants.o
+x/Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/IRConstants.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/IRConstants.m
+d/Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/IRConstants.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Compile /Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/IRConstants.m194"CompileC build/APIClient.build/Debug-iphonesimulator/APIClient.build/Objects-normal/i386/IRConstants.o APIClient/IRConstants.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler52472b007cb0b941^4da335007cb0b941^---0#0#1#-19%DVTDocumentLocation2@84"file:///Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/IRConstants.m0000000000000000^3636"CompileC build/APIClient.build/Debug-iphonesimulator/APIClient.build/Objects-normal/i386/IRConstants.o APIClient/IRConstants.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/maximpervushin/Projects/iOSApiClient/APIClient    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/APIClient-generated-files.hmap -I/Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/APIClient-own-target-headers.hmap -I/Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/APIClient-all-target-headers.hmap -iquote /Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/APIClient-project-headers.hmap -I/Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/DerivedSources/i386 -I/Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/DerivedSources -F/Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator -include /var/folders/21/fltv7wms5qj8yzq7sj0y5zw80000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/APIClient-Prefix-bgrugcgkadjgrehfhmfcidjeolgk/APIClient-Prefix.pch -MMD -MT dependencies -MF /Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/Objects-normal/i386/IRConstants.d --serialize-diagnostics /Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/Objects-normal/i386/IRConstants.dia -c /Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/IRConstants.m -o /Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/Objects-normal/i386/IRConstants.o36"DBDC0218-378D-4BDB-9988-3222064F5AAB-
+b7BB955A2-B485-451A-BE45-2EE91BC5A6E4
+
+CCompileC build/APIClient.build/Debug-iphonesimulator/APIClient.build/Objects-normal/i386/IRNetworkManager.o /Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/IRNetworkManager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s430996480.168741
+e430996480.229026
+r1
+xCompileC
+xbuild/APIClient.build/Debug-iphonesimulator/APIClient.build/Objects-normal/i386/IRNetworkManager.o
+x/Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/IRNetworkManager.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/IRNetworkManager.m
+d/Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/IRNetworkManager.h
+d/Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/IRNetworkManagement.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection90"Compile /Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/IRNetworkManager.m204"CompileC build/APIClient.build/Debug-iphonesimulator/APIClient.build/Objects-normal/i386/IRNetworkManager.o APIClient/IRNetworkManager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler8c832b007cb0b941^94a13a007cb0b941^---0#0#1#-19%DVTDocumentLocation2@89"file:///Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/IRNetworkManager.m0000000000000000^3666"CompileC build/APIClient.build/Debug-iphonesimulator/APIClient.build/Objects-normal/i386/IRNetworkManager.o APIClient/IRNetworkManager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/maximpervushin/Projects/iOSApiClient/APIClient    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/APIClient-generated-files.hmap -I/Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/APIClient-own-target-headers.hmap -I/Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/APIClient-all-target-headers.hmap -iquote /Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/APIClient-project-headers.hmap -I/Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/DerivedSources/i386 -I/Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/DerivedSources -F/Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator -include /var/folders/21/fltv7wms5qj8yzq7sj0y5zw80000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/APIClient-Prefix-bgrugcgkadjgrehfhmfcidjeolgk/APIClient-Prefix.pch -MMD -MT dependencies -MF /Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/Objects-normal/i386/IRNetworkManager.d --serialize-diagnostics /Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/Objects-normal/i386/IRNetworkManager.dia -c /Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/IRNetworkManager.m -o /Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/Objects-normal/i386/IRNetworkManager.o36"42FCBF18-4A5F-44E0-AD22-F730F957EAC2-
+b7BB955A2-B485-451A-BE45-2EE91BC5A6E4
+
+CCompileC build/APIClient.build/Debug-iphonesimulator/APIClient.build/Objects-normal/i386/NSData+IRHexadecimalString.o /Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/Categories/NSData+IRHexadecimalString.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s430996480.167962
+e430996480.211126
+r1
+xCompileC
+xbuild/APIClient.build/Debug-iphonesimulator/APIClient.build/Objects-normal/i386/NSData+IRHexadecimalString.o
+x/Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/Categories/NSData+IRHexadecimalString.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/Categories/NSData+IRHexadecimalString.m
+d/Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/Categories/NSData+IRHexadecimalString.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection111"Compile /Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/Categories/NSData+IRHexadecimalString.m235"CompileC build/APIClient.build/Debug-iphonesimulator/APIClient.build/Objects-normal/i386/NSData+IRHexadecimalString.o APIClient/Categories/NSData+IRHexadecimalString.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler7f4c2b007cb0b941^450d36007cb0b941^---0#0#1#-19%DVTDocumentLocation2@110"file:///Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/Categories/NSData+IRHexadecimalString.m0000000000000000^3748"CompileC build/APIClient.build/Debug-iphonesimulator/APIClient.build/Objects-normal/i386/NSData+IRHexadecimalString.o APIClient/Categories/NSData+IRHexadecimalString.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/maximpervushin/Projects/iOSApiClient/APIClient    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/APIClient-generated-files.hmap -I/Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/APIClient-own-target-headers.hmap -I/Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/APIClient-all-target-headers.hmap -iquote /Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/APIClient-project-headers.hmap -I/Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/DerivedSources/i386 -I/Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/DerivedSources -F/Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator -include /var/folders/21/fltv7wms5qj8yzq7sj0y5zw80000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/APIClient-Prefix-bgrugcgkadjgrehfhmfcidjeolgk/APIClient-Prefix.pch -MMD -MT dependencies -MF /Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/Objects-normal/i386/NSData+IRHexadecimalString.d --serialize-diagnostics /Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/Objects-normal/i386/NSData+IRHexadecimalString.dia -c /Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/Categories/NSData+IRHexadecimalString.m -o /Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/Objects-normal/i386/NSData+IRHexadecimalString.o36"0A52E2C5-1D6B-4F9F-89D1-5EB297FC06C5-
+b7BB955A2-B485-451A-BE45-2EE91BC5A6E4
+
+CCompileC build/APIClient.build/Debug-iphonesimulator/APIClient.build/Objects-normal/i386/NSString+IRSignature.o /Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/Categories/NSString+IRSignature.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s430996480.168344
+e430996480.212285
+r1
+xCompileC
+xbuild/APIClient.build/Debug-iphonesimulator/APIClient.build/Objects-normal/i386/NSString+IRSignature.o
+x/Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/Categories/NSString+IRSignature.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/Categories/NSString+IRSignature.m
+d/Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/Categories/NSString+IRSignature.h
+d/Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/Categories/NSData+IRHexadecimalString.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"Compile /Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/Categories/NSString+IRSignature.m223"CompileC build/APIClient.build/Debug-iphonesimulator/APIClient.build/Objects-normal/i386/NSString+IRSignature.o APIClient/Categories/NSString+IRSignature.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler255d2b007cb0b941^c55836007cb0b941^---0#0#1#-19%DVTDocumentLocation2@104"file:///Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/Categories/NSString+IRSignature.m0000000000000000^3712"CompileC build/APIClient.build/Debug-iphonesimulator/APIClient.build/Objects-normal/i386/NSString+IRSignature.o APIClient/Categories/NSString+IRSignature.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/maximpervushin/Projects/iOSApiClient/APIClient    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.1 -iquote /Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/APIClient-generated-files.hmap -I/Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/APIClient-own-target-headers.hmap -I/Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/APIClient-all-target-headers.hmap -iquote /Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/APIClient-project-headers.hmap -I/Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/DerivedSources/i386 -I/Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/DerivedSources -F/Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator -include /var/folders/21/fltv7wms5qj8yzq7sj0y5zw80000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/APIClient-Prefix-bgrugcgkadjgrehfhmfcidjeolgk/APIClient-Prefix.pch -MMD -MT dependencies -MF /Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/Objects-normal/i386/NSString+IRSignature.d --serialize-diagnostics /Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/Objects-normal/i386/NSString+IRSignature.dia -c /Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/Categories/NSString+IRSignature.m -o /Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/Objects-normal/i386/NSString+IRSignature.o36"6FA4FE68-9F57-42F8-96A3-E9070CA1E1F2-
+b7BB955A2-B485-451A-BE45-2EE91BC5A6E4
+
+CLibtool /Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/libAPIClient.a normal i386
+s430996480.243926
+e430996480.251618
+r1
+xLibtool
+x/Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/libAPIClient.a
+xnormal
+xi386
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection171"Libtool /Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/libAPIClient.a normal i386171"Libtool /Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/libAPIClient.a normal i3866fbd3e007cb0b941^c26a40007cb0b941^---0#0#1#--1009"Libtool /Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/libAPIClient.a normal i386    cd /Users/maximpervushin/Projects/iOSApiClient/APIClient    export IPHONEOS_DEPLOYMENT_TARGET=7.1    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only i386 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -L/Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator -filelist /Users/maximpervushin/Projects/iOSApiClient/APIClient/build/APIClient.build/Debug-iphonesimulator/APIClient.build/Objects-normal/i386/APIClient.LinkFileList -framework Foundation -o /Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/libAPIClient.a36"B58FCA29-7CF1-4C72-BF79-959D5702C21A-
+b7BB955A2-B485-451A-BE45-2EE91BC5A6E4
+
+CPBXCp APIClient/Categories/NSData+IRHexadecimalString.h /Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient/NSData+IRHexadecimalString.h
+s430996480.252260
+e430996480.254602
+r1
+xPBXCp
+xAPIClient/Categories/NSData+IRHexadecimalString.h
+x/Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient/NSData+IRHexadecimalString.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection188"Copy /Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient/NSData+IRHexadecimalString.h239"PBXCp APIClient/Categories/NSData+IRHexadecimalString.h /Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient/NSData+IRHexadecimalString.h77d840007cb0b941^2f3241007cb0b941^---0#0#1#-19%DVTDocumentLocation2@190"file:///Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient/NSData+IRHexadecimalString.h0034905edcffdf42^672"PBXCp APIClient/Categories/NSData+IRHexadecimalString.h /Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient/NSData+IRHexadecimalString.h    cd /Users/maximpervushin/Projects/iOSApiClient/APIClient    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/Categories/NSData+IRHexadecimalString.h /Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient36"3521B3A9-43CE-4735-B44D-0C512FD882B8-
+b7BB955A2-B485-451A-BE45-2EE91BC5A6E4
+
+CPBXCp APIClient/Categories/NSString+IRSignature.h /Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient/NSString+IRSignature.h
+s430996480.252389
+e430996480.254635
+r1
+xPBXCp
+xAPIClient/Categories/NSString+IRSignature.h
+x/Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient/NSString+IRSignature.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection182"Copy /Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient/NSString+IRSignature.h227"PBXCp APIClient/Categories/NSString+IRSignature.h /Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient/NSString+IRSignature.haddb40007cb0b941^295e41007cb0b941^---0#0#1#-19%DVTDocumentLocation2@184"file:///Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient/NSString+IRSignature.h0034905edcffdf42^654"PBXCp APIClient/Categories/NSString+IRSignature.h /Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient/NSString+IRSignature.h    cd /Users/maximpervushin/Projects/iOSApiClient/APIClient    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/Categories/NSString+IRSignature.h /Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient36"87DD9F39-F468-48B6-AE35-0F7A92291118-
+b7BB955A2-B485-451A-BE45-2EE91BC5A6E4
+
+CPBXCp APIClient/IRAPIManager.h /Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient/IRAPIManager.h
+s430996480.252593
+e430996480.255118
+r1
+xPBXCp
+xAPIClient/IRAPIManager.h
+x/Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient/IRAPIManager.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection174"Copy /Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient/IRAPIManager.h200"PBXCp APIClient/IRAPIManager.h /Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient/IRAPIManager.h4aee40007cb0b941^998241007cb0b941^---0#0#1#-19%DVTDocumentLocation2@176"file:///Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient/IRAPIManager.h0034905edcffdf42^608"PBXCp APIClient/IRAPIManager.h /Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient/IRAPIManager.h    cd /Users/maximpervushin/Projects/iOSApiClient/APIClient    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/IRAPIManager.h /Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient36"38117FBF-63AA-4E2D-98ED-416C98E9710E-
+b7BB955A2-B485-451A-BE45-2EE91BC5A6E4
+
+CPBXCp APIClient/IRConstants.h /Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient/IRConstants.h
+s430996480.252826
+e430996480.255039
+r1
+xPBXCp
+xAPIClient/IRConstants.h
+x/Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient/IRConstants.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection173"Copy /Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient/IRConstants.h198"PBXCp APIClient/IRConstants.h /Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient/IRConstants.h080141007cb0b941^2d7841007cb0b941^---0#0#1#-19%DVTDocumentLocation2@175"file:///Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient/IRConstants.h0034905edcffdf42^605"PBXCp APIClient/IRConstants.h /Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient/IRConstants.h    cd /Users/maximpervushin/Projects/iOSApiClient/APIClient    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/IRConstants.h /Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient36"486DB413-C059-40CC-A81F-3CF442B25A8D-
+b7BB955A2-B485-451A-BE45-2EE91BC5A6E4
+
+CPBXCp APIClient/IRNetworkManagement.h /Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient/IRNetworkManagement.h
+s430996480.253079
+e430996480.255166
+r1
+xPBXCp
+xAPIClient/IRNetworkManagement.h
+x/Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient/IRNetworkManagement.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection181"Copy /Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient/IRNetworkManagement.h214"PBXCp APIClient/IRNetworkManagement.h /Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient/IRNetworkManagement.hc02041007cb0b941^9e7d41007cb0b941^---0#0#1#-19%DVTDocumentLocation2@183"file:///Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient/IRNetworkManagement.h0034905edcffdf42^629"PBXCp APIClient/IRNetworkManagement.h /Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient/IRNetworkManagement.h    cd /Users/maximpervushin/Projects/iOSApiClient/APIClient    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/IRNetworkManagement.h /Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient36"9C5F613A-23BE-49CA-9B90-D7852C4281FF-
+b7BB955A2-B485-451A-BE45-2EE91BC5A6E4
+
+CPBXCp APIClient/IRNetworkManager.h /Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient/IRNetworkManager.h
+s430996480.253278
+e430996480.255366
+r1
+xPBXCp
+xAPIClient/IRNetworkManager.h
+x/Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient/IRNetworkManager.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection178"Copy /Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient/IRNetworkManager.h208"PBXCp APIClient/IRNetworkManager.h /Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient/IRNetworkManager.hab2141007cb0b941^01a541007cb0b941^---0#0#1#-19%DVTDocumentLocation2@180"file:///Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient/IRNetworkManager.h0034905edcffdf42^620"PBXCp APIClient/IRNetworkManager.h /Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient/IRNetworkManager.h    cd /Users/maximpervushin/Projects/iOSApiClient/APIClient    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/maximpervushin/Projects/iOSApiClient/APIClient/APIClient/IRNetworkManager.h /Users/maximpervushin/Library/Developer/Xcode/DerivedData/iOSApiClient-cwlmbojyysvgygatyywpkrkaslre/Build/Products/Debug-iphonesimulator/include/APIClient36"DACC5440-93D1-4418-BC13-8F063F676F7B-
+b7BB955A2-B485-451A-BE45-2EE91BC5A6E4
+
+CProcessPCH /var/folders/21/fltv7wms5qj8yzq7sj0y5zw80000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/APIClient-Prefix-bgrugcgkadjgrehfhmfcidjeolgk/APIClient-Prefix.pch.pch APIClient/APIClient-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+

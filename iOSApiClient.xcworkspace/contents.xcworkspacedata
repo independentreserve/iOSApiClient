@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:APIClient/APIClient.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:SampleApplication/SampleApplication.xcodeproj">
    </FileRef>
 </Workspace>
