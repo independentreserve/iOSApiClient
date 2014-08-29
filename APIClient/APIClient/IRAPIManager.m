@@ -408,7 +408,7 @@
     if (self.apiKey != nil && self.apiSecret != nil) {
         requiredParameters[IRAPI_APIKeyParameter] = self.apiKey;
         requiredParameters[IRAPI_SignatureParameter]
-            = [NSString signatureStringWithAPIKey:self.apiSecret apiSecret:self.apiKey nonce:nonce];
+            = [NSString signatureStringWithAPIKey:self.apiKey apiSecret:self.apiSecret nonce:nonce];
     } else {
         NSLog(@"WARNING: Independent Reserve API key or API secret is not set. Private methods will not work.");
     }

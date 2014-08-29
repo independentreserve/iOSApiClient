@@ -11,8 +11,6 @@
 		C5093DB419AC9CAE008D01A4 /* IRGetDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5093DB319AC9CAE008D01A4 /* IRGetDateViewController.m */; };
 		C5093DB719AC9CC4008D01A4 /* IRGetStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5093DB619AC9CC4008D01A4 /* IRGetStringViewController.m */; };
 		C5093DBA19AC9D5D008D01A4 /* IRGetValueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5093DB919AC9D5D008D01A4 /* IRGetValueViewController.m */; };
-		C520B9E719B07F3300CF9150 /* libAPIClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C520B9E619B07F3300CF9150 /* libAPIClient.a */; };
-		C520B9E819B07F3300CF9150 /* libAPIClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C520B9E619B07F3300CF9150 /* libAPIClient.a */; };
 		C54D751719A4A32E002C533D /* IRRequestMethodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C54D751619A4A32E002C533D /* IRRequestMethodViewController.m */; };
 		C54D751A19A4B22A002C533D /* IRGetParametersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C54D751919A4B22A002C533D /* IRGetParametersTableViewController.m */; };
 		C5518E1119A31B4700FC57D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5518E1019A31B4700FC57D1 /* Foundation.framework */; };
@@ -29,6 +27,8 @@
 		C5518E3619A31B4700FC57D1 /* SampleApplicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5518E3519A31B4700FC57D1 /* SampleApplicationTests.m */; };
 		C5518E4119A31B9500FC57D1 /* Storyboard_Phone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5518E4019A31B9500FC57D1 /* Storyboard_Phone.storyboard */; };
 		C58FAB2619AC854C00BB4E2F /* IRGetOptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C58FAB2519AC854C00BB4E2F /* IRGetOptionViewController.m */; };
+		C594213F19B082D2007A857B /* libAPIClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C594213E19B082D2007A857B /* libAPIClient.a */; };
+		C594214019B082D2007A857B /* libAPIClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C594213E19B082D2007A857B /* libAPIClient.a */; };
 		C5AC1C8F19AB498100878F8D /* IRParameterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AC1C8E19AB498100878F8D /* IRParameterTableViewCell.m */; };
 		C5AC1C9519AB59E800878F8D /* IRGetNumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AC1C9419AB59E800878F8D /* IRGetNumberViewController.m */; };
 		C5CA176419ADE05E0081E232 /* IRSampleNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5CA176319ADE05E0081E232 /* IRSampleNetworkManager.m */; };
@@ -53,14 +53,6 @@
 		C5093DB619AC9CC4008D01A4 /* IRGetStringViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRGetStringViewController.m; sourceTree = "<group>"; };
 		C5093DB819AC9D5D008D01A4 /* IRGetValueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRGetValueViewController.h; sourceTree = "<group>"; };
 		C5093DB919AC9D5D008D01A4 /* IRGetValueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRGetValueViewController.m; sourceTree = "<group>"; };
-		C520B9E019B07F3300CF9150 /* IRAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRAPIManager.h; sourceTree = "<group>"; };
-		C520B9E119B07F3300CF9150 /* IRConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRConstants.h; sourceTree = "<group>"; };
-		C520B9E219B07F3300CF9150 /* IRNetworkManagement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRNetworkManagement.h; sourceTree = "<group>"; };
-		C520B9E319B07F3300CF9150 /* IRNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRNetworkManager.h; sourceTree = "<group>"; };
-		C520B9E419B07F3300CF9150 /* NSData+IRHexadecimalString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+IRHexadecimalString.h"; sourceTree = "<group>"; };
-		C520B9E519B07F3300CF9150 /* NSString+IRSignature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+IRSignature.h"; sourceTree = "<group>"; };
-		C520B9E619B07F3300CF9150 /* libAPIClient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAPIClient.a; path = ../../Binaries/libAPIClient.a; sourceTree = "<group>"; };
-		C544132919B05D92006AFCAD /* libAPIClient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAPIClient.a; path = "../APIClient/build/Debug-iphoneos/libAPIClient.a"; sourceTree = "<group>"; };
 		C54D751519A4A32E002C533D /* IRRequestMethodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRRequestMethodViewController.h; sourceTree = "<group>"; };
 		C54D751619A4A32E002C533D /* IRRequestMethodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRRequestMethodViewController.m; sourceTree = "<group>"; };
 		C54D751819A4B22A002C533D /* IRGetParametersTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRGetParametersTableViewController.h; sourceTree = "<group>"; };
@@ -84,6 +76,13 @@
 		C5518E4019A31B9500FC57D1 /* Storyboard_Phone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard_Phone.storyboard; sourceTree = "<group>"; };
 		C58FAB2419AC854C00BB4E2F /* IRGetOptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRGetOptionViewController.h; sourceTree = "<group>"; };
 		C58FAB2519AC854C00BB4E2F /* IRGetOptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRGetOptionViewController.m; sourceTree = "<group>"; };
+		C594213819B082D2007A857B /* IRAPIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRAPIManager.h; sourceTree = "<group>"; };
+		C594213919B082D2007A857B /* IRConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRConstants.h; sourceTree = "<group>"; };
+		C594213A19B082D2007A857B /* IRNetworkManagement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRNetworkManagement.h; sourceTree = "<group>"; };
+		C594213B19B082D2007A857B /* IRNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRNetworkManager.h; sourceTree = "<group>"; };
+		C594213C19B082D2007A857B /* NSData+IRHexadecimalString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+IRHexadecimalString.h"; sourceTree = "<group>"; };
+		C594213D19B082D2007A857B /* NSString+IRSignature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+IRSignature.h"; sourceTree = "<group>"; };
+		C594213E19B082D2007A857B /* libAPIClient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAPIClient.a; path = ../../Binaries/libAPIClient.a; sourceTree = "<group>"; };
 		C5AC1C8D19AB498100878F8D /* IRParameterTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRParameterTableViewCell.h; sourceTree = "<group>"; };
 		C5AC1C8E19AB498100878F8D /* IRParameterTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRParameterTableViewCell.m; sourceTree = "<group>"; };
 		C5AC1C9319AB59E800878F8D /* IRGetNumberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRGetNumberViewController.h; sourceTree = "<group>"; };
@@ -99,7 +98,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5518E1319A31B4700FC57D1 /* CoreGraphics.framework in Frameworks */,
-				C520B9E719B07F3300CF9150 /* libAPIClient.a in Frameworks */,
+				C594213F19B082D2007A857B /* libAPIClient.a in Frameworks */,
 				C5518E1519A31B4700FC57D1 /* UIKit.framework in Frameworks */,
 				C5518E1119A31B4700FC57D1 /* Foundation.framework in Frameworks */,
 			);
@@ -110,7 +109,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5518E2A19A31B4700FC57D1 /* XCTest.framework in Frameworks */,
-				C520B9E819B07F3300CF9150 /* libAPIClient.a in Frameworks */,
+				C594214019B082D2007A857B /* libAPIClient.a in Frameworks */,
 				C5518E2C19A31B4700FC57D1 /* UIKit.framework in Frameworks */,
 				C5518E2B19A31B4700FC57D1 /* Foundation.framework in Frameworks */,
 			);
@@ -119,28 +118,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C520B9DE19B07F3300CF9150 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				C520B9DF19B07F3300CF9150 /* APIClient */,
-			);
-			name = include;
-			path = ../../Binaries/include;
-			sourceTree = "<group>";
-		};
-		C520B9DF19B07F3300CF9150 /* APIClient */ = {
-			isa = PBXGroup;
-			children = (
-				C520B9E019B07F3300CF9150 /* IRAPIManager.h */,
-				C520B9E119B07F3300CF9150 /* IRConstants.h */,
-				C520B9E219B07F3300CF9150 /* IRNetworkManagement.h */,
-				C520B9E319B07F3300CF9150 /* IRNetworkManager.h */,
-				C520B9E419B07F3300CF9150 /* NSData+IRHexadecimalString.h */,
-				C520B9E519B07F3300CF9150 /* NSString+IRSignature.h */,
-			);
-			path = APIClient;
-			sourceTree = "<group>";
-		};
 		C5518E0419A31B4600FC57D1 = {
 			isa = PBXGroup;
 			children = (
@@ -164,7 +141,6 @@
 		C5518E0F19A31B4700FC57D1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C544132919B05D92006AFCAD /* libAPIClient.a */,
 				C5518E1019A31B4700FC57D1 /* Foundation.framework */,
 				C5518E1219A31B4700FC57D1 /* CoreGraphics.framework */,
 				C5518E1419A31B4700FC57D1 /* UIKit.framework */,
@@ -249,6 +225,28 @@
 			path = "View Controllers";
 			sourceTree = "<group>";
 		};
+		C594213619B082D2007A857B /* include */ = {
+			isa = PBXGroup;
+			children = (
+				C594213719B082D2007A857B /* APIClient */,
+			);
+			name = include;
+			path = ../../Binaries/include;
+			sourceTree = "<group>";
+		};
+		C594213719B082D2007A857B /* APIClient */ = {
+			isa = PBXGroup;
+			children = (
+				C594213819B082D2007A857B /* IRAPIManager.h */,
+				C594213919B082D2007A857B /* IRConstants.h */,
+				C594213A19B082D2007A857B /* IRNetworkManagement.h */,
+				C594213B19B082D2007A857B /* IRNetworkManager.h */,
+				C594213C19B082D2007A857B /* NSData+IRHexadecimalString.h */,
+				C594213D19B082D2007A857B /* NSString+IRSignature.h */,
+			);
+			path = APIClient;
+			sourceTree = "<group>";
+		};
 		C5AC1C7F19AB41F400878F8D /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -261,8 +259,8 @@
 		C5B310F319B07C4100CC197D /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				C520B9DE19B07F3300CF9150 /* include */,
-				C520B9E619B07F3300CF9150 /* libAPIClient.a */,
+				C594213619B082D2007A857B /* include */,
+				C594213E19B082D2007A857B /* libAPIClient.a */,
 			);
 			path = Dependencies;
 			sourceTree = "<group>";

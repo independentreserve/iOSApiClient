@@ -21,13 +21,14 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		C50E6C7519B085FF00DE137C /* NSString_IRSignatureTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = C50E6C7419B085FF00DE137C /* NSString_IRSignatureTestCase.m */; };
+		C50E6C7E19B08D5700DE137C /* IRFakeNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C50E6C7D19B08D5700DE137C /* IRFakeNetworkManager.m */; };
 		C54412EE19B05D00006AFCAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C54412ED19B05D00006AFCAD /* Foundation.framework */; };
 		C54412FC19B05D00006AFCAD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C54412FB19B05D00006AFCAD /* XCTest.framework */; };
 		C54412FD19B05D00006AFCAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C54412ED19B05D00006AFCAD /* Foundation.framework */; };
 		C54412FF19B05D00006AFCAD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C54412FE19B05D00006AFCAD /* UIKit.framework */; };
 		C544130219B05D00006AFCAD /* libAPIClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C54412EA19B05D00006AFCAD /* libAPIClient.a */; };
 		C544130819B05D00006AFCAD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C544130619B05D00006AFCAD /* InfoPlist.strings */; };
-		C544130A19B05D00006AFCAD /* APIClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C544130919B05D00006AFCAD /* APIClientTests.m */; };
 		C544131F19B05D37006AFCAD /* NSData+IRHexadecimalString.m in Sources */ = {isa = PBXBuildFile; fileRef = C544131519B05D37006AFCAD /* NSData+IRHexadecimalString.m */; };
 		C544132019B05D37006AFCAD /* NSData+IRHexadecimalString.m in Sources */ = {isa = PBXBuildFile; fileRef = C544131519B05D37006AFCAD /* NSData+IRHexadecimalString.m */; };
 		C544132119B05D37006AFCAD /* NSString+IRSignature.m in Sources */ = {isa = PBXBuildFile; fileRef = C544131719B05D37006AFCAD /* NSString+IRSignature.m */; };
@@ -38,6 +39,23 @@
 		C544132619B05D37006AFCAD /* IRConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = C544131B19B05D37006AFCAD /* IRConstants.m */; };
 		C544132719B05D37006AFCAD /* IRNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C544131E19B05D37006AFCAD /* IRNetworkManager.m */; };
 		C544132819B05D37006AFCAD /* IRNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C544131E19B05D37006AFCAD /* IRNetworkManager.m */; };
+		C5B2236F19B091E700F614F0 /* IRAPIManagerTestCase+getValidPrimaryCurrencyCodes.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B2236A19B091E700F614F0 /* IRAPIManagerTestCase+getValidPrimaryCurrencyCodes.m */; };
+		C5B2237019B091E700F614F0 /* IRAPIManagerTestCase+getValidSecondaryCurrencyCodes.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B2236C19B091E700F614F0 /* IRAPIManagerTestCase+getValidSecondaryCurrencyCodes.m */; };
+		C5B2237119B091E700F614F0 /* IRAPIManagerTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B2236E19B091E700F614F0 /* IRAPIManagerTestCase.m */; };
+		C5B2237419B0928600F614F0 /* IRAPIManagerTestCase+getValidLimitOrderTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B2237319B0928600F614F0 /* IRAPIManagerTestCase+getValidLimitOrderTypes.m */; };
+		C5B2237719B0948F00F614F0 /* IRAPIManagerTestCase+getValidMarketOrderTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B2237619B0948F00F614F0 /* IRAPIManagerTestCase+getValidMarketOrderTypes.m */; };
+		C5B2237A19B0F62700F614F0 /* IRAPIManagerTestCase+getMarketSummary.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B2237919B0F62700F614F0 /* IRAPIManagerTestCase+getMarketSummary.m */; };
+		C5B2237D19B0F79C00F614F0 /* IRAPIManagerTestCase+getOrderBook.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B2237C19B0F79C00F614F0 /* IRAPIManagerTestCase+getOrderBook.m */; };
+		C5B2238019B0F80900F614F0 /* IRAPIManagerTestCase+getTradeHistorySummary.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B2237F19B0F80900F614F0 /* IRAPIManagerTestCase+getTradeHistorySummary.m */; };
+		C5B2238319B0F85200F614F0 /* IRAPIManagerTestCase+getRecentTrades.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B2238219B0F85200F614F0 /* IRAPIManagerTestCase+getRecentTrades.m */; };
+		C5B2238619B0F89E00F614F0 /* IRAPIManagerTestCase+placeLimitOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B2238519B0F89E00F614F0 /* IRAPIManagerTestCase+placeLimitOrder.m */; };
+		C5B2238919B0F8EA00F614F0 /* IRAPIManagerTestCase+placeMarketOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B2238819B0F8EA00F614F0 /* IRAPIManagerTestCase+placeMarketOrder.m */; };
+		C5B2238C19B0F94100F614F0 /* IRAPIManagerTestCase+cancelOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B2238B19B0F94100F614F0 /* IRAPIManagerTestCase+cancelOrder.m */; };
+		C5B2238F19B0F99500F614F0 /* IRAPIManagerTestCase+getOpenOrders.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B2238E19B0F99500F614F0 /* IRAPIManagerTestCase+getOpenOrders.m */; };
+		C5B2239219B0F9ED00F614F0 /* IRAPIManagerTestCase+getClosedOrders.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B2239119B0F9ED00F614F0 /* IRAPIManagerTestCase+getClosedOrders.m */; };
+		C5B2239519B0FA4300F614F0 /* IRAPIManagerTestCase+getAccounts.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B2239419B0FA4300F614F0 /* IRAPIManagerTestCase+getAccounts.m */; };
+		C5B2239819B0FAA700F614F0 /* IRAPIManagerTestCase+getTransactions.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B2239719B0FAA700F614F0 /* IRAPIManagerTestCase+getTransactions.m */; };
+		C5B2239B19B0FAFD00F614F0 /* IRAPIManagerTestCase+getBitcoinDepositAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B2239A19B0FAFD00F614F0 /* IRAPIManagerTestCase+getBitcoinDepositAddress.m */; };
 		C5F7631319B070EB00029C71 /* NSData+IRHexadecimalString.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C544131419B05D37006AFCAD /* NSData+IRHexadecimalString.h */; };
 		C5F7631419B070EB00029C71 /* NSString+IRSignature.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C544131619B05D37006AFCAD /* NSString+IRSignature.h */; };
 		C5F7631519B070EB00029C71 /* IRAPIManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = C544131819B05D37006AFCAD /* IRAPIManager.h */; };
@@ -75,6 +93,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C50E6C7419B085FF00DE137C /* NSString_IRSignatureTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSString_IRSignatureTestCase.m; sourceTree = "<group>"; };
+		C50E6C7C19B08D5700DE137C /* IRFakeNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRFakeNetworkManager.h; sourceTree = "<group>"; };
+		C50E6C7D19B08D5700DE137C /* IRFakeNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRFakeNetworkManager.m; sourceTree = "<group>"; };
 		C54412EA19B05D00006AFCAD /* libAPIClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAPIClient.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C54412ED19B05D00006AFCAD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C54412F119B05D00006AFCAD /* APIClient-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "APIClient-Prefix.pch"; sourceTree = "<group>"; };
@@ -83,7 +104,6 @@
 		C54412FE19B05D00006AFCAD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		C544130519B05D00006AFCAD /* APIClientTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "APIClientTests-Info.plist"; sourceTree = "<group>"; };
 		C544130719B05D00006AFCAD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C544130919B05D00006AFCAD /* APIClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APIClientTests.m; sourceTree = "<group>"; };
 		C544131419B05D37006AFCAD /* NSData+IRHexadecimalString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+IRHexadecimalString.h"; sourceTree = "<group>"; };
 		C544131519B05D37006AFCAD /* NSData+IRHexadecimalString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+IRHexadecimalString.m"; sourceTree = "<group>"; };
 		C544131619B05D37006AFCAD /* NSString+IRSignature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+IRSignature.h"; sourceTree = "<group>"; };
@@ -95,6 +115,40 @@
 		C544131C19B05D37006AFCAD /* IRNetworkManagement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRNetworkManagement.h; sourceTree = "<group>"; };
 		C544131D19B05D37006AFCAD /* IRNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRNetworkManager.h; sourceTree = "<group>"; };
 		C544131E19B05D37006AFCAD /* IRNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRNetworkManager.m; sourceTree = "<group>"; };
+		C5B2236919B091E700F614F0 /* IRAPIManagerTestCase+getValidPrimaryCurrencyCodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IRAPIManagerTestCase+getValidPrimaryCurrencyCodes.h"; sourceTree = "<group>"; };
+		C5B2236A19B091E700F614F0 /* IRAPIManagerTestCase+getValidPrimaryCurrencyCodes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IRAPIManagerTestCase+getValidPrimaryCurrencyCodes.m"; sourceTree = "<group>"; };
+		C5B2236B19B091E700F614F0 /* IRAPIManagerTestCase+getValidSecondaryCurrencyCodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IRAPIManagerTestCase+getValidSecondaryCurrencyCodes.h"; sourceTree = "<group>"; };
+		C5B2236C19B091E700F614F0 /* IRAPIManagerTestCase+getValidSecondaryCurrencyCodes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IRAPIManagerTestCase+getValidSecondaryCurrencyCodes.m"; sourceTree = "<group>"; };
+		C5B2236D19B091E700F614F0 /* IRAPIManagerTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IRAPIManagerTestCase.h; sourceTree = "<group>"; };
+		C5B2236E19B091E700F614F0 /* IRAPIManagerTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IRAPIManagerTestCase.m; sourceTree = "<group>"; };
+		C5B2237219B0928600F614F0 /* IRAPIManagerTestCase+getValidLimitOrderTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IRAPIManagerTestCase+getValidLimitOrderTypes.h"; sourceTree = "<group>"; };
+		C5B2237319B0928600F614F0 /* IRAPIManagerTestCase+getValidLimitOrderTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IRAPIManagerTestCase+getValidLimitOrderTypes.m"; sourceTree = "<group>"; };
+		C5B2237519B0948F00F614F0 /* IRAPIManagerTestCase+getValidMarketOrderTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IRAPIManagerTestCase+getValidMarketOrderTypes.h"; sourceTree = "<group>"; };
+		C5B2237619B0948F00F614F0 /* IRAPIManagerTestCase+getValidMarketOrderTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IRAPIManagerTestCase+getValidMarketOrderTypes.m"; sourceTree = "<group>"; };
+		C5B2237819B0F62700F614F0 /* IRAPIManagerTestCase+getMarketSummary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IRAPIManagerTestCase+getMarketSummary.h"; sourceTree = "<group>"; };
+		C5B2237919B0F62700F614F0 /* IRAPIManagerTestCase+getMarketSummary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IRAPIManagerTestCase+getMarketSummary.m"; sourceTree = "<group>"; };
+		C5B2237B19B0F79C00F614F0 /* IRAPIManagerTestCase+getOrderBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IRAPIManagerTestCase+getOrderBook.h"; sourceTree = "<group>"; };
+		C5B2237C19B0F79C00F614F0 /* IRAPIManagerTestCase+getOrderBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IRAPIManagerTestCase+getOrderBook.m"; sourceTree = "<group>"; };
+		C5B2237E19B0F80900F614F0 /* IRAPIManagerTestCase+getTradeHistorySummary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IRAPIManagerTestCase+getTradeHistorySummary.h"; sourceTree = "<group>"; };
+		C5B2237F19B0F80900F614F0 /* IRAPIManagerTestCase+getTradeHistorySummary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IRAPIManagerTestCase+getTradeHistorySummary.m"; sourceTree = "<group>"; };
+		C5B2238119B0F85200F614F0 /* IRAPIManagerTestCase+getRecentTrades.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IRAPIManagerTestCase+getRecentTrades.h"; sourceTree = "<group>"; };
+		C5B2238219B0F85200F614F0 /* IRAPIManagerTestCase+getRecentTrades.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IRAPIManagerTestCase+getRecentTrades.m"; sourceTree = "<group>"; };
+		C5B2238419B0F89E00F614F0 /* IRAPIManagerTestCase+placeLimitOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IRAPIManagerTestCase+placeLimitOrder.h"; sourceTree = "<group>"; };
+		C5B2238519B0F89E00F614F0 /* IRAPIManagerTestCase+placeLimitOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IRAPIManagerTestCase+placeLimitOrder.m"; sourceTree = "<group>"; };
+		C5B2238719B0F8EA00F614F0 /* IRAPIManagerTestCase+placeMarketOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IRAPIManagerTestCase+placeMarketOrder.h"; sourceTree = "<group>"; };
+		C5B2238819B0F8EA00F614F0 /* IRAPIManagerTestCase+placeMarketOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IRAPIManagerTestCase+placeMarketOrder.m"; sourceTree = "<group>"; };
+		C5B2238A19B0F94100F614F0 /* IRAPIManagerTestCase+cancelOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IRAPIManagerTestCase+cancelOrder.h"; sourceTree = "<group>"; };
+		C5B2238B19B0F94100F614F0 /* IRAPIManagerTestCase+cancelOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IRAPIManagerTestCase+cancelOrder.m"; sourceTree = "<group>"; };
+		C5B2238D19B0F99500F614F0 /* IRAPIManagerTestCase+getOpenOrders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IRAPIManagerTestCase+getOpenOrders.h"; sourceTree = "<group>"; };
+		C5B2238E19B0F99500F614F0 /* IRAPIManagerTestCase+getOpenOrders.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IRAPIManagerTestCase+getOpenOrders.m"; sourceTree = "<group>"; };
+		C5B2239019B0F9ED00F614F0 /* IRAPIManagerTestCase+getClosedOrders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IRAPIManagerTestCase+getClosedOrders.h"; sourceTree = "<group>"; };
+		C5B2239119B0F9ED00F614F0 /* IRAPIManagerTestCase+getClosedOrders.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IRAPIManagerTestCase+getClosedOrders.m"; sourceTree = "<group>"; };
+		C5B2239319B0FA4300F614F0 /* IRAPIManagerTestCase+getAccounts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IRAPIManagerTestCase+getAccounts.h"; sourceTree = "<group>"; };
+		C5B2239419B0FA4300F614F0 /* IRAPIManagerTestCase+getAccounts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IRAPIManagerTestCase+getAccounts.m"; sourceTree = "<group>"; };
+		C5B2239619B0FAA700F614F0 /* IRAPIManagerTestCase+getTransactions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IRAPIManagerTestCase+getTransactions.h"; sourceTree = "<group>"; };
+		C5B2239719B0FAA700F614F0 /* IRAPIManagerTestCase+getTransactions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IRAPIManagerTestCase+getTransactions.m"; sourceTree = "<group>"; };
+		C5B2239919B0FAFD00F614F0 /* IRAPIManagerTestCase+getBitcoinDepositAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IRAPIManagerTestCase+getBitcoinDepositAddress.h"; sourceTree = "<group>"; };
+		C5B2239A19B0FAFD00F614F0 /* IRAPIManagerTestCase+getBitcoinDepositAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IRAPIManagerTestCase+getBitcoinDepositAddress.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,7 +230,10 @@
 		C544130319B05D00006AFCAD /* APIClientTests */ = {
 			isa = PBXGroup;
 			children = (
-				C544130919B05D00006AFCAD /* APIClientTests.m */,
+				C5B2236819B091E700F614F0 /* IRAPIManager */,
+				C50E6C7C19B08D5700DE137C /* IRFakeNetworkManager.h */,
+				C50E6C7D19B08D5700DE137C /* IRFakeNetworkManager.m */,
+				C50E6C7419B085FF00DE137C /* NSString_IRSignatureTestCase.m */,
 				C544130419B05D00006AFCAD /* Supporting Files */,
 			);
 			path = APIClientTests;
@@ -200,6 +257,47 @@
 				C544131719B05D37006AFCAD /* NSString+IRSignature.m */,
 			);
 			path = Categories;
+			sourceTree = "<group>";
+		};
+		C5B2236819B091E700F614F0 /* IRAPIManager */ = {
+			isa = PBXGroup;
+			children = (
+				C5B2238A19B0F94100F614F0 /* IRAPIManagerTestCase+cancelOrder.h */,
+				C5B2238B19B0F94100F614F0 /* IRAPIManagerTestCase+cancelOrder.m */,
+				C5B2239319B0FA4300F614F0 /* IRAPIManagerTestCase+getAccounts.h */,
+				C5B2239419B0FA4300F614F0 /* IRAPIManagerTestCase+getAccounts.m */,
+				C5B2239919B0FAFD00F614F0 /* IRAPIManagerTestCase+getBitcoinDepositAddress.h */,
+				C5B2239A19B0FAFD00F614F0 /* IRAPIManagerTestCase+getBitcoinDepositAddress.m */,
+				C5B2239019B0F9ED00F614F0 /* IRAPIManagerTestCase+getClosedOrders.h */,
+				C5B2239119B0F9ED00F614F0 /* IRAPIManagerTestCase+getClosedOrders.m */,
+				C5B2237819B0F62700F614F0 /* IRAPIManagerTestCase+getMarketSummary.h */,
+				C5B2237919B0F62700F614F0 /* IRAPIManagerTestCase+getMarketSummary.m */,
+				C5B2238D19B0F99500F614F0 /* IRAPIManagerTestCase+getOpenOrders.h */,
+				C5B2238E19B0F99500F614F0 /* IRAPIManagerTestCase+getOpenOrders.m */,
+				C5B2237B19B0F79C00F614F0 /* IRAPIManagerTestCase+getOrderBook.h */,
+				C5B2237C19B0F79C00F614F0 /* IRAPIManagerTestCase+getOrderBook.m */,
+				C5B2238119B0F85200F614F0 /* IRAPIManagerTestCase+getRecentTrades.h */,
+				C5B2238219B0F85200F614F0 /* IRAPIManagerTestCase+getRecentTrades.m */,
+				C5B2237E19B0F80900F614F0 /* IRAPIManagerTestCase+getTradeHistorySummary.h */,
+				C5B2237F19B0F80900F614F0 /* IRAPIManagerTestCase+getTradeHistorySummary.m */,
+				C5B2239619B0FAA700F614F0 /* IRAPIManagerTestCase+getTransactions.h */,
+				C5B2239719B0FAA700F614F0 /* IRAPIManagerTestCase+getTransactions.m */,
+				C5B2237219B0928600F614F0 /* IRAPIManagerTestCase+getValidLimitOrderTypes.h */,
+				C5B2237319B0928600F614F0 /* IRAPIManagerTestCase+getValidLimitOrderTypes.m */,
+				C5B2237519B0948F00F614F0 /* IRAPIManagerTestCase+getValidMarketOrderTypes.h */,
+				C5B2237619B0948F00F614F0 /* IRAPIManagerTestCase+getValidMarketOrderTypes.m */,
+				C5B2236919B091E700F614F0 /* IRAPIManagerTestCase+getValidPrimaryCurrencyCodes.h */,
+				C5B2236A19B091E700F614F0 /* IRAPIManagerTestCase+getValidPrimaryCurrencyCodes.m */,
+				C5B2236B19B091E700F614F0 /* IRAPIManagerTestCase+getValidSecondaryCurrencyCodes.h */,
+				C5B2236C19B091E700F614F0 /* IRAPIManagerTestCase+getValidSecondaryCurrencyCodes.m */,
+				C5B2238419B0F89E00F614F0 /* IRAPIManagerTestCase+placeLimitOrder.h */,
+				C5B2238519B0F89E00F614F0 /* IRAPIManagerTestCase+placeLimitOrder.m */,
+				C5B2238719B0F8EA00F614F0 /* IRAPIManagerTestCase+placeMarketOrder.h */,
+				C5B2238819B0F8EA00F614F0 /* IRAPIManagerTestCase+placeMarketOrder.m */,
+				C5B2236D19B091E700F614F0 /* IRAPIManagerTestCase.h */,
+				C5B2236E19B091E700F614F0 /* IRAPIManagerTestCase.m */,
+			);
+			path = IRAPIManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,11 +411,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				C544132219B05D37006AFCAD /* NSString+IRSignature.m in Sources */,
+				C5B2239519B0FA4300F614F0 /* IRAPIManagerTestCase+getAccounts.m in Sources */,
+				C50E6C7519B085FF00DE137C /* NSString_IRSignatureTestCase.m in Sources */,
+				C50E6C7E19B08D5700DE137C /* IRFakeNetworkManager.m in Sources */,
 				C544132619B05D37006AFCAD /* IRConstants.m in Sources */,
+				C5B2238619B0F89E00F614F0 /* IRAPIManagerTestCase+placeLimitOrder.m in Sources */,
+				C5B2239219B0F9ED00F614F0 /* IRAPIManagerTestCase+getClosedOrders.m in Sources */,
+				C5B2238F19B0F99500F614F0 /* IRAPIManagerTestCase+getOpenOrders.m in Sources */,
+				C5B2237419B0928600F614F0 /* IRAPIManagerTestCase+getValidLimitOrderTypes.m in Sources */,
+				C5B2237719B0948F00F614F0 /* IRAPIManagerTestCase+getValidMarketOrderTypes.m in Sources */,
+				C5B2237D19B0F79C00F614F0 /* IRAPIManagerTestCase+getOrderBook.m in Sources */,
 				C544132419B05D37006AFCAD /* IRAPIManager.m in Sources */,
+				C5B2237A19B0F62700F614F0 /* IRAPIManagerTestCase+getMarketSummary.m in Sources */,
+				C5B2238C19B0F94100F614F0 /* IRAPIManagerTestCase+cancelOrder.m in Sources */,
+				C5B2238919B0F8EA00F614F0 /* IRAPIManagerTestCase+placeMarketOrder.m in Sources */,
 				C544132019B05D37006AFCAD /* NSData+IRHexadecimalString.m in Sources */,
-				C544130A19B05D00006AFCAD /* APIClientTests.m in Sources */,
+				C5B2236F19B091E700F614F0 /* IRAPIManagerTestCase+getValidPrimaryCurrencyCodes.m in Sources */,
+				C5B2239819B0FAA700F614F0 /* IRAPIManagerTestCase+getTransactions.m in Sources */,
+				C5B2239B19B0FAFD00F614F0 /* IRAPIManagerTestCase+getBitcoinDepositAddress.m in Sources */,
+				C5B2237019B091E700F614F0 /* IRAPIManagerTestCase+getValidSecondaryCurrencyCodes.m in Sources */,
+				C5B2237119B091E700F614F0 /* IRAPIManagerTestCase.m in Sources */,
+				C5B2238319B0F85200F614F0 /* IRAPIManagerTestCase+getRecentTrades.m in Sources */,
 				C544132819B05D37006AFCAD /* IRNetworkManager.m in Sources */,
+				C5B2238019B0F80900F614F0 /* IRAPIManagerTestCase+getTradeHistorySummary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

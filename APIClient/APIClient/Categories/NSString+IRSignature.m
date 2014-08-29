@@ -9,7 +9,7 @@
 
 @implementation NSString (IRSignature)
 
-+ (NSString *)signatureStringWithAPIKey:(NSString *)apiSecret apiSecret:(NSString *)apiKey nonce:(NSString *)nonce {
++ (NSString *)signatureStringWithAPIKey:(NSString *)apiKey apiSecret:(NSString *)apiSecret nonce:(NSString *)nonce {
 
     NSData *apiSecretData = [apiSecret dataUsingEncoding:NSUTF8StringEncoding];
 
