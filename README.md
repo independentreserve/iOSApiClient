@@ -16,12 +16,12 @@ Refer to https://www.independentreserve.com/API  for API documentation
 
 ###Steps to build
 
-* You can compile both the client and the static library in Xcode. To build universal static library use 'APIClientUniversalLibrary' target
+* You can compile both the client and the static library in Xcode. To build the universal static library use the 'APIClientUniversalLibrary' target
 * Precompiled static library can be found in the 'Binaries' folder
 
 ###Configuring Sample Application
 
-iOS Sample Application is ready to work, you only need to set Independent Reserve API Key and API Secret. You can add 'IndependentReserveAPIKey' and 'IndependentReserveAPISecret' keys to application info.plist file or set apiKey and apiSecret properties of IRAPIManager object.
+iOS Sample Application is ready to use, you  need to set Independent Reserve API Key and API Secret. You can add 'IndependentReserveAPIKey' and 'IndependentReserveAPISecret' keys to application info.plist file or set apiKey and apiSecret properties of IRAPIManager object.
 
 ##Need help?
 
