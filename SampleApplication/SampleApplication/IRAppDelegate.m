@@ -17,8 +17,9 @@
     [IRAPIManager manager].networkManager = [IRSampleNetworkManager manager];
     // Set apiKey and apiSecret of IRAPIManager object or add IndependentReserveAPIKey and IndependentReserveAPISecret properties to application info.plist.
     
-#error Set valid API key. Use [IRAPIManager manager].apiKey = @"your-api-key" or add object "IndependentReserveAPIKey" to info.plist file.
-#error Set valid API secret. Use [IRAPIManager manager].apiSecret = @"your-api-secret" or add object "IndependentReserveAPISecret" to info.plist file.
+#error You should provide valid Independent Reserve API key and API secret. You can do it in two ways:\
+    1. Set them in SampleApplication-Info.plist file. Add values for IndependentReserveAPIKey and IndependentReserveAPISecret keys; \
+    2. Set them in code. [IRAPIManager manager].apiKey = @"your-api-key" and [IRAPIManager manager].apiSecret = @"your-api-secret"
 
     return YES;
 }

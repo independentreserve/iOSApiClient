@@ -40,5 +40,9 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+	<key>IndependentReserveAPIKey</key>
+	<string></string>
+	<key>IndependentReserveAPISecret</key>
+	<string></string>
 </dict>
 </plist>

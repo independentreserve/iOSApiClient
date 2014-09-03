@@ -405,14 +405,14 @@
         IRAPI_NonceParameter : nonce
     } mutableCopy];
 
-    if (self.apiKey != nil && self.apiSecret != nil) {
+    if (self.apiKey == nil || [self.apiKey isEqualToString:@""] || self.apiSecret == nil || [self.apiSecret isEqualToString:@""]) {
+        NSLog(@"WARNING: Independent Reserve API key or API secret is not set. Private methods will not work.");
+    } else {
         requiredParameters[IRAPI_APIKeyParameter] = self.apiKey;
         requiredParameters[IRAPI_SignatureParameter]
-            = [NSString signatureStringWithAPIKey:self.apiKey apiSecret:self.apiSecret nonce:nonce];
-    } else {
-        NSLog(@"WARNING: Independent Reserve API key or API secret is not set. Private methods will not work.");
+        = [NSString signatureStringWithAPIKey:self.apiKey apiSecret:self.apiSecret nonce:nonce];
     }
-
+    
     return requiredParameters;
 }
 
