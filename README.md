@@ -22,8 +22,9 @@ Refer to https://www.independentreserve.com/API  for API documentation
 ###Configuring Sample Application
 
 To start sample application you need to set your Independent Reserve API Key and API Secret. You can do it in two ways:
-1. Set them in SampleApplication-Info.plist file. Add values for IndependentReserveAPIKey and IndependentReserveAPISecret keys;
-2. Set them in code. [IRAPIManager manager].apiKey = @"your-api-key" and [IRAPIManager manager].apiSecret = @"your-api-secret"
+
+* Set them in SampleApplication-Info.plist file. Add values for IndependentReserveAPIKey and IndependentReserveAPISecret keys;
+* Set them in code. [IRAPIManager manager].apiKey = @"your-api-key" and [IRAPIManager manager].apiSecret = @"your-api-secret"
 
 
 
