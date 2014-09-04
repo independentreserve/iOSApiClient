@@ -33,7 +33,7 @@ OR
 
 * Set the values directly in code. [IRAPIManager manager].apiKey = @"your-api-key" and [IRAPIManager manager].apiSecret = @"your-api-secret"
 
-Once you have configured the application, you need to remove the two #error processor directives in the IRAppDelegate class. These are there to remind you to set the config.
+Once you have configured the application, you need to remove the two #error processor directives in the IRAppDelegate class. These are purely there to remind you to set the config before running the app.
 
 
 ##Need help?
