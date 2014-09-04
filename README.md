@@ -28,7 +28,9 @@ To run the sample application you need to first configure your API Key and API S
 You can configure the Sample Application in two ways:
 
 * Update the SampleApplication-Info.plist file and set correct values for the IndependentReserveAPIKey and IndependentReserveAPISecret keys;
+
 OR
+
 * Set the values directly in code. [IRAPIManager manager].apiKey = @"your-api-key" and [IRAPIManager manager].apiSecret = @"your-api-secret"
 
 Once you have configured the application, you need to remove the two #error processor directives in the IRAppDelegate class. These are there to remind you to set the config.
